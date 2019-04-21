@@ -29,17 +29,17 @@ Precisamos falar sobre mulheres que mudaram o mundo.
 
 ## Orientações para alteração do código:
 
-> O que deve ser alterado?
->
-> Dentro da pasta **perfil**, criar um arquivo .html com o nome da sua personalidade. Exemplo: minha personalidade é Ada Lovelace, então crie um arquivo ada-lovelace.html e insira na pasta perfil.
-> Use o layout do arquivo **nome-sobrenome.html** para fazer sua página de perfil. Para alterações de CSS, faça um estilo **interno** 
+O que deve ser alterado?
+
+Dentro da pasta **perfil**, criar um arquivo .html com o nome da sua personalidade. Exemplo: minha personalidade é Ada Lovelace, então crie um arquivo ada-lovelace.html e insira na pasta perfil.
+Use o layout do arquivo **nome-sobrenome.html** para fazer sua página de perfil. Para alterações de CSS, faça um estilo **interno** 
  Vamos relembrar um pouco sobre as especificidades do CSS (https://www.w3schools.com/CSS/css_specificity.asp)
->
-> As imagens da sua página de perfil devem ficar na pasta **img/personalidade**. Na hora de fazer a conexão na sua página, não esqueça do caminho da imagem.
->
-> Para o **index.html**, você deve colocar uma imagem quadrada da personalidade na pasta **img/home-perfil**.
->
-> Dentro do seu arquivo index.html, mude o src da imagem e o href do link da **sua** personalidade (elas estão organizadas por nome de personalidade e em ordem alfabética).
+
+As imagens da sua página de perfil devem ficar na pasta **img/personalidade**. Na hora de fazer a conexão na sua página, não esqueça do caminho da imagem.
+
+Para o **index.html**, você deve colocar uma imagem quadrada da personalidade na pasta **img/home-perfil**.
+
+Dentro do seu arquivo index.html, mude o src da imagem e o href do link da **sua** personalidade (elas estão organizadas por nome de personalidade e em ordem alfabética).
 
 
 
