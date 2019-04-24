@@ -29,17 +29,30 @@ Precisamos falar sobre mulheres que mudaram o mundo.
 
 ## Orientações para alteração do código:
 
-O que deve ser alterado?
 
-Dentro da pasta **perfil**, criar um arquivo .html com o nome da sua personalidade. Exemplo: minha personalidade é Ada Lovelace, então crie um arquivo ada-lovelace.html e insira na pasta perfil.
-Use o layout do arquivo **nome-sobrenome.html** para fazer sua página de perfil. Para alterações de CSS, faça um estilo **interno** 
+
+
+
+
+
+## Revisão e tricks de CSS 
+
  Vamos relembrar um pouco sobre as especificidades do CSS (https://www.w3schools.com/CSS/css_specificity.asp)
 
-As imagens da sua página de perfil devem ficar na pasta **img/personalidade**. Na hora de fazer a conexão na sua página, não esqueça do caminho da imagem.
+ linear-gradiente:
+ * doc- (https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient)
+ * example com imagem - (https://codepen.io/natalyapeixoto/pen/pBxYML)
 
-Para o **index.html**, você deve colocar uma imagem quadrada da personalidade na pasta **img/home-perfil**.
 
-Dentro do seu arquivo index.html, mude o src da imagem e o href do link da **sua** personalidade (elas estão organizadas por nome de personalidade e em ordem alfabética).
+
+## Idéias de sites: 
+
+* (https://codepen.io/carolinass/pen/WrPyja)
+* (http://jorge-sanz.github.io/tribute-page/)
+* (https://natalyapeixoto.github.io/)
+* (https://htmlpreview.github.io/?https://github.com/dutra21/projetoFinalReprograma/blob/master/index.html)
+* (https://codepen.io/h26k2/pen/yKdzLv?page=3)
+* (https://codepen.io/jetthusher/pen/zapGwr) 
 
 
 
