@@ -80,3 +80,21 @@ Precisamos falar sobre mulheres que mudaram o mundo.
 * https://www.freepik.com/
 * https://search.creativecommons.org/
 
+
+### What's next?
+
+vou morrer defendendo esses 3 canais de estudo:
+1 - https://www.freecodecamp.org/
+2 - https://javascript30.com/
+3 - https://www.cursoemvideo.com/
+
+AJAX - https://www.w3schools.com/xml/ajax_intro.asp
+FETCH - https://www.mundojs.com.br/2018/04/25/vamos-falar-de-fetch/
+
+'#100DaysOfCode'
+Linkedin 
+Porfólio 
+*Github* 
+
+
+
