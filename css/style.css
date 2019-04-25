@@ -157,10 +157,13 @@ li {
 .header {
     min-height: 70vh;
     height: 480px;
-    background: linear-gradient(rgba(255, 0, 255, 0.2),
-                                rgba(255, 0, 255, 0.2)),
-                url(../img/turma6.jpeg);
+    background: 
+        linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
+        rgba(196, 61, 223, 0.418) 50%,
+        #69156975 100%),
+        url(../img/turma6.jpeg);
     background-size: cover;
+    filter: contrast(100%);
     background-position-y:  5%;
     background-repeat: no-repeat;
     display: flex;
@@ -174,12 +177,14 @@ li {
     text-transform: uppercase;
     font-size: 2.5rem;
     font-weight: 900;
+    text-shadow: 0px 5px 15px black;
 }
 
 .principal__sub {
     font-weight: 300;
     margin: 2rem 0 3rem 0;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    text-shadow: 0px 0px 15px black;
 }
 
 /* --- SECTION MARAVILHOSAS --- */
@@ -298,7 +303,7 @@ li {
       linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
       rgba(196, 61, 223, 0.418) 50%,
       #69156975 100%),
-      url(../img/personalidade/stephanie-shirley/banner.jpg);
+      url(../perfil-mulheres/stephanie-shirley/imgs/banner.jpg);
     background-position: center;
     display: flex;
     background-size: cover;

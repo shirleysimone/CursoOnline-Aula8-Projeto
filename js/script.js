@@ -28,8 +28,8 @@ window.addEventListener("scroll", function(){
 
 
 
-const buttonAutora = document.querySelector('.arrow')
 try {
+    const buttonAutora = document.querySelector('.arrow')
     buttonAutora.addEventListener('click', function(e){
         e.preventDefault()
         buttonAutora.classList.toggle('arrow-close')
