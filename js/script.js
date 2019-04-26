@@ -1,4 +1,5 @@
 (function(){
+
     var menuResponsivo = document.getElementById("menuResponsivo");
     var btnResponsivo = document.getElementById("btnResponsivo");
     
@@ -16,7 +17,7 @@
 
 window.addEventListener("scroll", function(){
    
-    if(pageYOffset >= 400) {
+    if(pageYOffset >= 250) {
        document.querySelector('.navegacao').style.backgroundColor = '#674582';
        document.querySelector('.navegacao__itens').style.backgroundColor = '#674582';
     } else {
@@ -29,6 +30,7 @@ window.addEventListener("scroll", function(){
 
 
 try {
+
     const buttonAutora = document.querySelector('.arrow')
     buttonAutora.addEventListener('click', function(e){
         e.preventDefault()
@@ -37,9 +39,11 @@ try {
         autoraInfos.classList.toggle('opened');
     })
 } catch {
+
     if(!buttonAutora) {
         console.log('estamos na pagina home')
     } 
+
 }
 
 
