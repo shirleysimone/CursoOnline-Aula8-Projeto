@@ -30,7 +30,6 @@ window.addEventListener("scroll", function(){
 
 
 try {
-
     const buttonAutora = document.querySelector('.arrow')
     buttonAutora.addEventListener('click', function(e){
         e.preventDefault()
@@ -39,11 +38,9 @@ try {
         autoraInfos.classList.toggle('opened');
     })
 } catch {
-
     if(!buttonAutora) {
         console.log('estamos na pagina home')
     } 
-
 }
 
 
