@@ -8,6 +8,7 @@ Precisamos falar sobre mulheres que mudaram o mundo.
 * like a girl (https://www.youtube.com/watch?v=XjJQBjWYDTs)
 * microsoft (https://www.youtube.com/watch?v=tNqSzUdYazw)
 
+* Link do projeto (https://natalyapeixoto.github.io/CursoOnline-Aula8-Projeto/index.html)
 
 ## Orientações para git/github:
 
@@ -28,7 +29,7 @@ Precisamos falar sobre mulheres que mudaram o mundo.
 ![fork-img](./img/fork.jpeg)
 
 
-## Revisão e tricks de CSS 
+## Revisão CSS 
 
  Vamos relembrar um pouco sobre as especificidades do CSS (https://www.w3schools.com/CSS/css_specificity.asp)
  O que são pseudo-classes (https://www.w3schools.com/css/css_pseudo_classes.asp)
@@ -36,6 +37,8 @@ Precisamos falar sobre mulheres que mudaram o mundo.
  linear-gradiente:
  * doc - (https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient)
  * example com imagem - (https://codepen.io/natalyapeixoto/pen/pBxYML)
+
+ * background-attachment: (https://css-tricks.com/almanac/properties/b/background-attachment/)
 
 
 ## Revisão JavaScript Eventos 
@@ -84,8 +87,8 @@ Precisamos falar sobre mulheres que mudaram o mundo.
 ### What's next?
 
 vou morrer defendendo esses 3 canais de estudo:
-* 1 - https://www.freecodecamp.org/
-* 2 - https://javascript30.com/
+* 1 - https://www.freecodecamp.org/ (eng)
+* 2 - https://javascript30.com/ (eng)
 * 3 - https://www.cursoemvideo.com/
 
 * AJAX - https://www.w3schools.com/xml/ajax_intro.asp
