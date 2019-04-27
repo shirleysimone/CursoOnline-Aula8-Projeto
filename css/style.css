@@ -160,7 +160,7 @@ li {
     background: 
         linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
         rgba(196, 61, 223, 0.418) 50%,
-        #69156975 100%),
+        black 100%),
         url(../img/turma6.jpeg);
     background-size: cover;
     filter: contrast(100%);
