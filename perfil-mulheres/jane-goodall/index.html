@@ -8,9 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-</head>
 
 <body>
     <nav class="navegacao">
@@ -31,10 +28,10 @@
                 </div>
                 <div class="navegacao__redes-sociais">
                     <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
-                        <img src="./imgs/icon-facebook.png" alt="Íconde do Facebook">
+                        <img src="./imgs/facebook-logo-button (1).svg" alt="Íconde do Facebook">
                     </a>
                     <a href="https://twitter.com/ReprogramaBr" target="_blank">
-                        <img src="./imgs/icon-twitter.png" alt="Ícone do Twitter">
+                        <img src="./imgs/twitter-logo-button.svg" alt="Ícone do Twitter">
                     </a>
                     <a href="https://www.instagram.com/reprogramabr/" target="_blank">
                         <img src="./imgs/instagram-logo.svg" alt="Ícone do Instagram">
@@ -46,7 +43,7 @@
             </div>
             <div class="navegacao__menu-hamburguer" id="btnResponsivo">
                 <a href="#">
-                    <img src="./imgs/menu-nav.png" alt="Menu de navegação">
+                    <img src="./imgs/menu-button-of-three-horizontal-lines.svg" alt="Menu de navegação">
                 </a>
             </div>
         </div>
@@ -59,7 +56,77 @@
         </div>
     </header>
     <main>
+        <section class="secao-diva container">
+            <article>
+                <h3 class="secao-diva__titulo">Dedicação e Amor à Natureza</h3>
+                <div class="secao-diva__introducao">
+                    <div class="secao-diva__foto-perfil">
+                        <img style="border-radius:100%;" class="img-responsive" src="./imgs/jane_goodall_sq.jpg"
+                            alt="Foto Jane Goodall jovem">
+                    </div>
+                    <div>
+                        <p>Jane Goodall sempre foi uma apaixonada pela natureza e pelos animais. Por falta de recursos
+                            não conseguiu frequentar a universidade e trabalhou durante muitos anos como garçonete e,
+                            posteriormente, secretária do arqueólogo e paleontólogo queniano Louis Leakey. A falta de
+                            formação acadêmica de Goodall nunca foi um problema para Leakey, que apostou na dedicação,
+                            organização e motivação da jovem de 26 anos e a escolheu para desenvolver um trabalho
+                            inédito sobre comportamento de grandes primatas na Tanzânia, no Gombe Stream National Park.
+                            Em 1962, Jane Goodall se tornou
+                            a oitava pessoa a conquistar um título de Doutorado pela Universidade de Cambridge sem
+                            possuir uma graduação ou mestrado.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article class="secao-diva__citacao">
+                <p>“You cannot get through a single day without having an impact on the world around you. What you do
+                    makes a difference, and you have to decide what kind of difference you want to make”</p>
+            </article>
 
+            <article class="secao-diva__historia">
+                <h3 class="secao-diva__titulo secao-diva__titulo_esq">Jane Goodall e os Chimpanzés</h3>
+                <div>
+                    <p>Jane Goodall foi a primeira pesquisadora a interagir com Chimpanzés selvagens e seu trabalho
+                        transformou totalmente a forma como entendemos o comportamento destes animais, revelando
+                        diferenças e semelhanças surpreendentes com nossa própria espécie. Foi atavés de suas
+                        observações que hoje sabemos que os chimpazés são capazes de forjar ferramentas simples,
+                        formarem e manterem relações sociais complexas, entrar em estado de luto e outros comportamentos
+                        que antes eram considerados exclusivamente humanos.
+                    </p>
+
+                </div>
+                <div class="secao-diva__foto-grande">
+                    <img class="img-responsive" src="./imgs/jane-e-filhote2.jpg"
+                        alt="Foto Jane Goodall e Chimpanzé filhote">
+                </div>
+                <div>
+                    <p>Em 1977, Jane fundou a Jane Goodall Institute (JGI), que tem como objetivo arrecadar fundos para
+                        pesquisas na Tanzânia. Desde então, ela roda o mundo alertando sobre o risco de extinção dos
+                        chimpanzés do Gombe, defendendo a importância da conservação ambiental e dos estudos com grandes
+                        primatas.</p>
+                </div>
+            </article>
+        </section>
+
+        <section id="quote" class="quotation">
+            <div class="container">
+                <p>"There were some that tried to discredit my observations because I was a young, untrained girl...I
+                    didn't care what anybody said"</p>
+            </div>
+        </section>
+
+        <section id="videos" class="secao-videos">
+            <div class="container">
+                <h3 class="secao-video_titulo">Conheça mais sobre esta incrível mulher!</h3>
+                <div class="secao-video_conteudo">
+                    <iframe width="400" height="225" src="https://www.youtube.com/embed/FRlUJrEUn0Y" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <iframe width="400" height="225" src="https://www.youtube.com/embed/51z7WRDjOjM" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+        </section>
     </main>
 
     <div class="secao-cta">
@@ -81,7 +148,7 @@
             </div>
             <div class="rodape__redes-sociais">
                 <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
-                    <img src="./imgs/icon-facebook.png" alt="Icone do facebook Reprograma">
+                    <img src="./imgs/facebook-logo-button (1).svg" alt="Icone do facebook Reprograma">
                     <span>/br.mdemaravilhosa</span>
                 </a>
             </div>
@@ -90,6 +157,7 @@
             <p>Creative Commons 2018 | Feito com amor por Reprograma</p>
         </div>
     </footer>
+
 
     <script src="./js/script.js"></script>
 </body>
