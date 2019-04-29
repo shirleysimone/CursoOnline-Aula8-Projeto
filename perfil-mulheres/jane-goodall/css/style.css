@@ -75,8 +75,8 @@ li {
     position: absolute;
     right: -700px;
     top: 85px;
-    width: 100%;
-    text-align: center;
+    width: 52%;
+    text-align: right;
     padding: 3rem 0;
    
 }
@@ -86,7 +86,7 @@ li {
     right: 0;
     top: 85px;
     width: 100%;
-    text-align: center;
+    text-align: right;
     padding: 3rem 0;
     transition: right .5s;
 }
@@ -99,8 +99,14 @@ li {
     color: #BF7311;
 }
 
+.navegacao__menu-hamburguer {
+    text-align: right;
+}
+
 .navegacao__menu-hamburguer img {
     border-radius: 5px;
+    width: 10%;
+
 }
 
 .navegacao__nav {
@@ -122,7 +128,7 @@ li {
 }
 
 .navegacao__redes-sociais img {
-    width: 7%;
+    width: 14%;
 }
 
 
@@ -194,7 +200,7 @@ li {
 }
 
 .rodape__navegacao a:hover {
-    color: #C083B9;
+    color: #BF7311;
 }
 
 .rodape__logo {
@@ -209,11 +215,11 @@ li {
 }
 
 .rodape__redes-sociais a:hover {
-    color: #C083B9;
+    color: #BF7311;
 }
 
 .rodape__redes-sociais img {
-    max-width: 10px;
+    max-width: 18px;
     margin-right: .5rem;
 }
 
@@ -231,30 +237,6 @@ li {
 }
 
 /** ---- PERSONALIDADE ---- **/
-/* --- HEADER --- */
- .header-personalidade {
-    background-image:
-      linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
-      rgba(196, 61, 223, 0.418) 50%,
-      #69156975 100%),
-      url(../perfil-mulheres/stephanie-shirley/imgs/banner.jpg);
-    background-position: center;
-    display: flex;
-    background-size: cover;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 0 2rem;
-    color: white;
-    min-height: 80vh;
-    height: 500px;
-}
-
-.header-personalidade__titulo {
-    text-align: center;
-    font-size: 2.6rem;
-    text-transform: uppercase;
-}
-
 /* --- PEFIL DIVA--- */
 .secao-diva {
     display: flex;
@@ -262,6 +244,7 @@ li {
     align-items: center;
     justify-content: center;
     padding: 5rem 2rem;
+    padding-bottom: 0;
     margin: 0 auto;
 }
 
@@ -269,7 +252,7 @@ li {
     text-align: center;
     font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
     font-size: 2rem;
-    color: #674582;
+    color: #824933;
 }
 
 .secao-diva__titulo_esq {
@@ -277,7 +260,7 @@ li {
 }
 
 .secao-diva p {
-    color: #63458a;
+    color: #824933;
     font-size: 1.6rem;
     line-height: 1.5;
 }
@@ -289,17 +272,18 @@ li {
 }
 
 .secao-diva__foto-perfil {
-    max-width: 18rem;
+    width: 250%;
     margin: 1rem;
 }
 
 .secao-diva__citacao p {
     transition: all .5s;
     font-weight: bold;
-    border: 1px solid #63458a;
+    border: 1px solid #824933;
     text-align: center;
     padding: 1rem;
     font-size: 1.7rem;
+    background-image: url(../imgs/fundocitacao.jpg);
 }
 
 .secao-diva__citacao p:hover {
@@ -313,87 +297,49 @@ li {
     padding: 5rem 0;
 }
 
-/* --- AUTORA --- */
-.secao-autora {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+.secao-diva__foto-grande{
+    text-align: center;
+    width: 60%;
 }
 
-.secao-autora__container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 400px;
-    border-radius: 5px;
-}
 
-.arrow {
-    cursor: pointer;
-    width: 0; 
-    height: 0; 
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid #63458a;
+
+.quotation p {
     transition: all .5s;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
+    color: #BF7311;    
 }
 
-.arrow-close {
-    cursor: pointer;
-    transition: all .5s;
-    width: 0; 
-    height: 0; 
-    border-bottom: 10px solid #63458a;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid transparent;
-    margin-bottom: 25px;
+.secao-videos{
+    padding: 7rem;
+}
+
+.secao-video_titulo {
+    text-align: left;
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: #824933;
+}
+
+.secao-video_conteudo {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 
-.secao-autora__foto a:hover {
-    opacity: 0.8;
+/*scroll reveal */
+.quote-hidden{
+    opacity:0;
+}
+.quote-show {
+    opacity:1;
+    transition: all 1.5s;
 }
 
-.secao-autora__dados {
-    color: #63458a;
-}
-
-.secao-autora__dados p {
-    margin: 15px;
-    display: inline-block;
-    font-size: 20px;
-}
-
-.secao-autora__dados span {
-    font-size: 28px;
-}
-
-.secao-autora a {
-    font-style: italic;
-    text-decoration: underline;
-}
-.secao-autora__about {
-    background-color: rgb(248, 205, 248);
-    border-radius: 5px;
-    display:flex;
-    flex-direction: row;
-}
-.secao-autora__about img{
-    border-radius: 8px;
-    width: 75px;
-    height: 110px;
-    margin: 10px;
-}
-
-.secao-autora__about p {
-    line-height: 23px;
-    font-size:15px;
-    margin-right: 10px;
-}
 
 .closed{
     display:none;
@@ -428,7 +374,6 @@ li {
         position: static;
         display: flex;
         padding: 0;
-        width: auto;
     }
 
     .navegacao__nav {
@@ -471,20 +416,9 @@ li {
         margin: 0;
     }
 
-    /* --- SECTION MARAVILHOSAS --- */
-    .maravilhosas {
-        padding: 4rem 0;
-    }
-
-    .maravilhosas__box > div {
-        max-width: 200px;
-        margin: 5rem;
-    }
-
-    .maravilhosas__perfil p {
-        font-size: 1.5rem;
-        margin-top: 1rem;
-    }
+    .secao-diva__foto-perfil {
+        max-width: 40%;
+    }    
 
     /* --- FOOTER --- */
     .rodape {
@@ -520,6 +454,16 @@ li {
     }
 }
 
+@media (min-width: 320px) and (max-width: 760px){
+    .secao-diva__foto-perfil {
+        max-width: 70%;
+    } 
+
+    .header{
+        background-position: center;
+    }
+}
+
 @media (min-width: 1024px) {
     .principal {
         max-width: 650px;
@@ -529,7 +473,7 @@ li {
         margin: 3rem 0;
     }
     .secao-diva__foto-perfil {
-        max-width: 100%;
+        max-width: 50%;
         margin: 0 4rem;
     }
     .secao-diva p {

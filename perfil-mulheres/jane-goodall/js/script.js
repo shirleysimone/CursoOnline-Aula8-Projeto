@@ -1,3 +1,23 @@
+var quote = document.getElementById("quote");
+window.addEventListener("scroll", quoteJaneScrool);
+function quoteJaneScrool() {
+    switch(window.screen.availWidth){
+        case 1600:
+          quote.classList.add("quote-show")
+          quote.classList.remove("quote-hidden")
+        break;
+    }
+    if(pageYOffset >= 1600){
+        quote.classList.add("quote-show")
+        quote.classList.remove("quote-hidden")
+     }
+     else{
+       quote.classList.remove("quote-show")
+        quote.classList.add("quote-hidden")
+     }
+    };
+
+
 (function(){
 
     var menuResponsivo = document.getElementById("menuResponsivo");
@@ -18,16 +38,14 @@
 window.addEventListener("scroll", function(){
    
     if(pageYOffset >= 250) {
-       document.querySelector('.navegacao').style.backgroundColor = '#674582';
-       document.querySelector('.navegacao__itens').style.backgroundColor = '#674582';
+       document.querySelector('.navegacao').style.backgroundColor = '#BF7311';
+       document.querySelector('.navegacao__itens').style.backgroundColor = '#BF7311';
     } else {
        document.querySelector('.navegacao').style.backgroundColor = 'transparent';
        document.querySelector('.navegacao__itens').style.backgroundColor = 'transparent';
     }
 
 })
-
-
 
 try {
     const buttonAutora = document.querySelector('.arrow')
@@ -41,7 +59,4 @@ try {
     if(!buttonAutora) {
         console.log('estamos na pagina home')
     } 
-}
-
-
-
+};
