@@ -369,12 +369,13 @@ li {
     width: 50%;
 }
 
-.secao-cta__btn {
+.secao-cta__btn button {
     padding: 10px 25px;
     border-radius: 5px;
     background-color: #BF7311;
     color: #F4F0E4;
     font-size: 20px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
 .secao-cta__btn:hover{
