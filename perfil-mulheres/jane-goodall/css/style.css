@@ -315,9 +315,6 @@ li {
     0% {
       transform: scale(1.2);
     }
-    40% {
-      transform: scale(1);
-    }
     100% {
       transform: scale(1);
     }
@@ -589,14 +586,41 @@ li {
 }
 
 @media (min-width: 320px) and (max-width: 760px){
-    .secao-diva__foto-perfil {
-        max-width: 70%;
-    } 
+.secao-diva__foto-perfil {
+    max-width: 70%;
+} 
 
-    .header{
-        background-position: center;
-    }
+.header{
+    background-position: center;
 }
+
+.slider {
+    width: 80%;
+    padding: 0;
+    height: 200px;
+}
+
+.secao-videos iframe {
+    width: 200px;
+    height: 112px;
+}
+
+
+.secao-autora__btn {
+    font-size:14px;
+}
+
+.secao-cta__btn button {
+    font-size: 14px;
+    float: right;
+}
+
+.secao-video_titulo {
+    text-align: center;
+}
+}
+
+
 
 @media (min-width: 1024px) {
     .principal {
@@ -630,6 +654,7 @@ li {
     }
 
 }
+
 
 /* DESKTOP */
 @media (min-width: 1440px) {
