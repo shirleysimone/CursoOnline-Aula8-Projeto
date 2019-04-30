@@ -9,6 +9,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
 
+
 <body>
     <nav class="navegacao">
         <div class="navegacao__box container">
@@ -95,9 +96,15 @@
                     </p>
 
                 </div>
-                <div class="secao-diva__foto-grande">
-                    <img class="img-responsive" src="./imgs/jane-e-filhote2.jpg"
-                        alt="Foto Jane Goodall e Chimpanzé filhote">
+
+                <div class="slider">
+
+                    <div id="img">
+                        <img src="./imgs/a.jpg">
+                    </div>
+
+                </div>
+
                 </div>
                 <div>
                     <p>Em 1977, Jane fundou a Jane Goodall Institute (JGI), que tem como objetivo arrecadar fundos para
@@ -129,9 +136,33 @@
         </section>
     </main>
 
-    <div class="secao-cta">
-        <a class="secao-cta__btn" href="../../index.html#mulheres-maravilhosas">Ver mais mulheres</a>
-    </div>
+    <section id=botoes" class="secao-botoes">
+        <div class="secao-autora">
+            <button id="secao-autora__btn" class="secao-autora__btn">Sobre a Autora</button>
+            <div id="autora_modal" class="modal">
+                <div class="modal-conteudo">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Caroline Jandoso</h2>
+                    </div>
+                    <div class="modal-body">
+                        <img style="border-radius:100%;" src="./imgs/caroline jandoso.jpg"
+                            alt="Foto Caroline Jandoso">
+                        <p>Bióloga de graduação, Cervejeira Prática de atuação e Desenvolvedora Front-End em formação. Orgulhosamente aluna da primeira turma online de Front End da {reprograma}. Apaixonada por fermentação, programação e viagens.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <h4>Você pode entrar em contato comigo através do <a href="https://www.linkedin.com/in/caroljandoso/">LinkedIn</a> e também ver mais trabalhos no meu <a href="https://github.com/Jandoso">GitHub</a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="secao-cta">
+            <a class="secao-cta__btn" href="../../index.html#mulheres-maravilhosas"><button>Ver mais mulheres</button></a>
+        </div>
+    </section>
+
 
     <footer class="rodape">
         <div class="rodape__principal">
@@ -160,6 +191,8 @@
 
 
     <script src="./js/script.js"></script>
+
+
 </body>
 
 </html>

@@ -1,3 +1,45 @@
+// Modal Sobre a Autora
+
+const modal = document.getElementById('autora_modal');
+const modalBtn = document.getElementById('secao-autora__btn');
+const closeBtn = document.querySelector('.close');
+
+modalBtn.addEventListener('click', openModal);
+closeBtn.addEventListener('click', closeModal);
+window.addEventListener('click', outsideClick);
+
+function openModal() {
+  modal.style.display = 'block';
+}
+
+function closeModal() {
+  modal.style.display = 'none';
+}
+
+function outsideClick(e) {
+  if (e.target == modal) {
+    modal.style.display = 'none';
+  }
+}
+
+
+// Biblioteca - Carousel
+
+var images = ['a.jpg', 'b.jpg', 'c.jpg'];
+var x = 0;
+var imgs = document.getElementById('img');
+setInterval(slider, 2500);
+function slider() {
+  if (x < images.length) {
+    x = x + 1;
+  } else {
+    x = 1;
+  }
+  imgs.innerHTML = "<img src=imgs/" + images[x - 1] + ">";
+}
+
+// Citação "revelada"
+
 var quote = document.getElementById("quote");
 window.addEventListener("scroll", quoteJaneScrool);
 function quoteJaneScrool() {
@@ -17,6 +59,7 @@ function quoteJaneScrool() {
      }
     };
 
+// Menu Responsivo
 
 (function(){
 
@@ -46,17 +89,3 @@ window.addEventListener("scroll", function(){
     }
 
 })
-
-try {
-    const buttonAutora = document.querySelector('.arrow')
-    buttonAutora.addEventListener('click', function(e){
-        e.preventDefault()
-        buttonAutora.classList.toggle('arrow-close')
-        const autoraInfos = document.querySelector('.secao-autora__about')
-        autoraInfos.classList.toggle('opened');
-    })
-} catch {
-    if(!buttonAutora) {
-        console.log('estamos na pagina home')
-    } 
-};
