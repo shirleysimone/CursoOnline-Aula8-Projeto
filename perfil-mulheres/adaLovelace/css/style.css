@@ -1,13 +1,3 @@
-/* --- MOBILE FIRST - iPhone 7 - width < 768px --- */
-/* --- GERAL --- */
-/*
-unidades preferidas para esse CSS
-margin, padding: rem
-font-size: rem
-width: %
-max-width: % ou px
-*/
-
 * {
     box-sizing: border-box;
 }
@@ -36,8 +26,10 @@ li {
 
 /* define que as imagens tem que ter o tamanho máximo da div mãe */
 .img-responsive {
-    width: 100%;
-}
+
+width: 100%;
+} 
+
 
 /* define o tamanho da caixa */
 .container {
@@ -84,7 +76,7 @@ li {
 
 /* --- NAV --- */
 .navegacao {
-    background-color: #6745826b;
+    background-color: #3f066e6b;
     color: white;
     text-transform: uppercase;
     box-shadow: 0px 5px 5px rgba(0,0,0,.2);
@@ -131,7 +123,7 @@ li {
 }
 
 .navegacao__itens li > a:hover {
-    color: #C083B9;     
+    color: #C083B9;    
 }
 
 .navegacao__menu-hamburguer img {
@@ -154,77 +146,30 @@ li {
 
 
 /* --- HEADER --- */
-.header {
-    min-height: 70vh;
-    height: 480px;
-    background: 
-        linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
-        rgba(196, 61, 223, 0.418) 50%,
-        #69156975 100%),
-        url(../img/turma6.jpeg);
+.header-personalidade {
+    background-image:
+
+      url(../imgs/banner.jpg);
+    background-position: center;
+    display: flex;
     background-size: cover;
-    filter: contrast(100%);
-    background-position-y:  5%;
-    background-repeat: no-repeat;
-    display: flex;
     align-items: flex-end;
-    text-align: center;
-    padding: 11rem 2rem 5rem 2rem;
+    justify-content: center;
+    padding: 0 2rem;
     color: white;
+    min-height: 80vh;
+    height: 500px;
+
+  
 }
 
-.principal__titulo {
+.header-personalidade__titulo {
+    text-align: center;
+    font-size: 2.6rem;
     text-transform: uppercase;
-    font-size: 2.5rem;
-    font-weight: 900;
-    text-shadow: 0px 5px 15px black;
-}
-
-.principal__sub {
-    font-weight: 300;
-    margin: 2rem 0 3rem 0;
-    font-size: 1.8rem;
-    text-shadow: 0px 0px 15px black;
-}
-
-/* --- SECTION MARAVILHOSAS --- */
-.maravilhosas__titulo {
-    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
-    color: #63458a;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.maravilhosas__box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-    color: #63458a;
-}
-
-.maravilhosas__perfil {
-    max-width: 120px;
-    margin: 2rem;
-}
-
-.maravilhosas__perfil img {
-    background-color: #63458a;
-    border-radius: 10px;
-}
-
-.maravilhosas__perfil a img {
-    transition: all .5s;
 }
 
 
-.maravilhosas__perfil a:hover {
-    text-decoration: underline;
-}
-
-.maravilhosas__perfil a:hover img {
-    box-shadow: 0 3px 10px rgba(0,0,0,.2);
-}
 
 /* --- FOOTER --- */
 .rodape {
@@ -296,31 +241,103 @@ li {
     text-align: center;
 }
 
-/** ---- PERSONALIDADE ---- **/
-/* --- HEADER --- */
- .header-personalidade {
-    background-image:
-      linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
-      rgba(196, 61, 223, 0.418) 50%,
-      #69156975 100%),
-      url(../perfil-mulheres/stephanie-shirley/imgs/banner.jpg);
-    background-position: center;
-    display: flex;
-    background-size: cover;
-    align-items: flex-end;
+/*Fotos com  quadro Descricao*/
+
+  .foto1, .foto2 {
+    display:flex;
     justify-content: center;
-    padding: 0 2rem;
+  }
+
+  .maquina__img {
+     width: inherit;
+    height: 370px;
+    filter:grayscale(100%);
+    transition: all 1s;
+  }
+
+  .ada__img {
+    width: 555px;
+    height: 370px;
+    filter:grayscale(100%);
+    transition: all 1s;
+    
+  }
+
+  .maquina__img:hover{
+    filter:grayscale(0%);
+  }
+  .ada__img:hover{
+    filter:grayscale(0%);
+  }
+  
+ .maquina__text-caixa, .maquina__img-pequena, .ada__text-caixa, .ada__img-pequena {
+    width: 555px;
+    height: 370px;
+  }
+  
+   .ada__text {
+   text-align: left;
+   color: #F3F3F3;;
+   padding: 0em 1em;
+   margin-top :0;
+   
+  }
+  
+  .hr-maquina,.hr-ada {
+    
+    margin-right: 15px;
+    border: 0;
+    border-top: 4px solid rgb(183, 38, 147);
+    width:30%;
+  }
+ 
+  .maquina {
+    color: #F3F3F3;
+    padding: 0em 1em;
+    margin-bottom:0;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size:18px;
+  }
+  .maquina__text {
+    padding: 0em 1em;
+    margin-top :0;
+    margin-left: 82px;
+  }
+   .maquina__text-caixa{
+    text-align:right;
+    color: grey;
+    padding: 4em 1em;
+    background-color: black;
+  }
+  
+  .ada__text-caixa {
+    background-color: black;
+    padding: 4em 1em;
+  }
+  
+  /**CONTATO **/ 
+  
+  .contato {
+    background: linear-gradient(to bottom, rgba(22, 22, 22, .1) 0, rgba(22, 22, 22, .5) 75%, #161616 100%), url(../img/foto-footer.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contato img {
+    padding-top: 3em;
+    width: 2.5%;
+  }
+  
+  .contato p {
+    margin: 1em;
     color: white;
-    min-height: 80vh;
-    height: 500px;
-}
-
-.header-personalidade__titulo {
-    text-align: center;
-    font-size: 2.6rem;
-    text-transform: uppercase;
-}
-
+    font-size: 20px;
+  }
+ 
+  
 /* --- PEFIL DIVA--- */
 .secao-diva {
     display: flex;
@@ -337,7 +354,23 @@ li {
     font-size: 2rem;
     color: #674582;
 }
-
+/* Efeito javascript */
+@keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+ h3::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+  }
+/*---------------------------------------------- */
 .secao-diva__titulo_esq {
     margin-right: auto;
 }
@@ -355,6 +388,7 @@ li {
 }
 
 .secao-diva__foto-perfil {
+  
     max-width: 18rem;
     margin: 1rem;
 }
@@ -487,6 +521,7 @@ li {
     opacity: 0.8;
 }
 /*** MEDIA QUERIES ***/
+
 /* TABLET */
 @media (min-width: 768px) {
     /* --- NAV --- */
@@ -536,7 +571,8 @@ li {
     .principal__btn {
         margin: 0;
     }
-
+    
+    
     /* --- SECTION MARAVILHOSAS --- */
     .maravilhosas {
         padding: 4rem 0;
@@ -552,8 +588,23 @@ li {
         margin-top: 1rem;
     }
 
-    /* --- FOOTER --- */
-    .rodape {
+    
+    /** PERSONALIDADE **/
+    /* --- OUTRA HEADER --- */
+    .header-personalidade {
+        padding: 0 20rem;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .header-personalidade__titulo {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+  
+     /* --- FOOTER --- */
+     .rodape {
         padding-top: 0;
     }
 
@@ -571,22 +622,10 @@ li {
     .rodape__navegacao > li {
         font-size: 1.5rem;;
     }
-   
-    /** PERSONALIDADE **/
-    /* --- OUTRA HEADER --- */
-    .header-personalidade {
-        padding: 0 20rem;
-        display: flex;
-        align-items: flex-end;
-    }
-
-    .header-personalidade__titulo {
-        font-size: 3.5rem;
-        text-align: center;
-    }
+    
 }
 
-@media (min-width: 1024px) {
+ @media (min-width: 1024px) {
     .principal {
         max-width: 650px;
     }
@@ -616,8 +655,10 @@ li {
     .secao-autora__dados {
         margin: 0 3rem;
     }
+    
 
 }
+
 
 /* DESKTOP */
 @media (min-width: 1440px) {
@@ -633,5 +674,37 @@ li {
     }
     .principal {
         max-width: 650px;
+    }
+
+
+    
+}
+/* MOBILE */
+@media(min-width:320px) and (max-width:768px){
+
+
+      .foto1, .foto2 {
+      flex-direction: column;
+      align-items: center;
+     
+      }
+      .maquina__text-caixa,.ada__text-caixa {
+      
+        font-size: 13px;
+        width: 555px;
+        height: 210px;
+        padding: 0em 1em;
+        margin-bottom:0.5em;
+      }
+      .hr-maquina, .hr-ada {
+        display: none;
+      }
+      .ada__text,.maquina__text{
+          margin-left: 68px;
+          width: 393px;
+          padding:13px;
+      }
+      .seta_img{
+        width: 10%;
     }
 }
