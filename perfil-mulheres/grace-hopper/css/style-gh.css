@@ -1,0 +1,72 @@
+/** ---- PERSONALIDADE ---- **/
+/* --- HEADER --- */
+.header-personalidade__img {
+  background-image: linear-gradient(
+      to top,
+      rgba(3, 3, 3, 0.781) 0,
+      rgba(196, 61, 223, 0.418) 50%,
+      #69156975 100%
+    ),
+    url(../imgs/gh-titulo.jpg);
+}
+
+.img_link, .site_link{
+  color: #63458a
+}
+
+.img_link:hover, .site_link:hover {
+  color: #d06bd0;
+}
+.img-link:visited, .site_link:visited {
+  color: #74195f;
+}
+
+.secao-divas__referencias--link{
+  color:#d06bd0;
+}
+.secao-divas__referencias--link:hover{
+  color: #63458a;
+}
+/* .secao-divas__referencias--link:visited{
+  color: #74195f;
+} */
+
+.navegacao_nav-color, .secao-cta__btn, .rodape__navegacao a, .rodape__redes-sociais a{
+  color: white;
+}
+#secao-diva__slide-show {
+  width: 100%;
+  background: #63458a;
+  text-align: center;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  margin: 
+}
+
+#secao-diva__slide-show p {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  margin-top: 1rem;
+  font-size: 2.2rem;
+}
+
+.secao-diva__artigo{
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+
+}
+
+.secao-diva__titulo{
+  padding-bottom: 1rem;
+}
+
+.card-header button:hover{
+  text-decoration: none;
+}
+
+.card .card-header {
+  background-color: rgba(150, 101, 181, 0.13);  
+}
