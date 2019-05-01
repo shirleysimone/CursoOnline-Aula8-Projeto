@@ -1,0 +1,64 @@
+.header-personalidade {
+    background-image:
+    linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
+    rgba(196, 188, 197, 0.418) 50%,
+    #69156975 100%),
+    url(../Karen_Sparck_Jones/assets/5.jpg);
+    background-position: center;
+    display: flex;
+    background-size: cover;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 3rem;
+    color: white;
+    min-height: 80vh;
+    height: 625px;
+    
+}
+
+.header-personalidade__titulo {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+
+p{
+  font-size: x-small;
+  text-align: justify;
+}
+
+.fonte{
+  font-size: x-small;
+}
+main{
+background-image: linear-gradient(to bottom left, rgba(3, 3, 3, 0.71) 0,
+rgba(196, 188, 197, 0.418) 50%,
+#69156975 100%);
+
+}
+.secao-diva__titulo{
+  font-size: 5rem;
+}
+td{
+  font-size: x-small;
+  font-size: 2rem;
+  width: 40rem;
+  text-align: center;
+  color: rgb(127, 81, 170);
+  padding: 10px;
+}
+
+ul{
+  font-size: large;
+  font-size: 2.5rem;
+  text-align: center;
+  color: rgb(127, 81, 170);
+  padding: 20px;
+}
+.secao-autora__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  border-radius: 5px;
+}
