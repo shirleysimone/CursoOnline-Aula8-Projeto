@@ -14,3 +14,63 @@
     min-height: 80vh;
     height: 500px;
 }
+
+/* section1 */
+.bio-niede-guidon{
+  display: block;
+  margin: 5%;
+}
+h2{
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #63458a;
+  margin: 5%;
+}
+.h2-cover{
+  color: white;
+  margin: 10%;
+}
+p{
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+li{
+  font-size: 1.2rem;
+}
+
+/* section2 - imagem */
+
+.image--container{
+	position: relative;
+  width:100%;
+  height: auto;
+	padding:5em 2em 5em 2em;
+}
+.cover{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height: 100%;
+	z-index: -1;
+}
+.c1{
+  background-image: 
+  linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
+      rgba(196, 61, 223, 0.418) 50%,
+      #69156975 100%),
+  url("./img/arqueologa-niede-guidon.jpg"); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
+}
+
+/* section3 */
+.hipotese-niede-guidon{
+  margin: 5%;
+}
+
+.hipotese-niede-guidon img {
+  border-radius: 20px;
+}
