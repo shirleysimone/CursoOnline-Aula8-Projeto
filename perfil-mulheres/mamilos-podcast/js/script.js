@@ -1,5 +1,11 @@
 
+// ON CLICK NA IMAGEM
 
+
+function changeimage() 
+{
+document.getElementById("image").src= "./imgs/mamilos-logo-2.png";
+}
 // Menu Responsivo
 
 (function(){
