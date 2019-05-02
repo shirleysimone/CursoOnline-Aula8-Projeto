@@ -1,13 +1,48 @@
 /** ---- PERSONALIDADE ---- **/
 /* --- HEADER --- */
+.navegacao__itens li > a:hover {
+  color: rgb(220, 45, 255);
+}
+
+.secao-cta__btn:hover {
+  color: rgb(240, 163, 255);
+}
+
+.secao-autora a{
+  color: rgb(240, 163, 255);
+}
+
+.secao-autora a:hover{
+  color: rgb(220, 45, 255);
+}
+
+.navegacao__menu-hamburguer {
+  text-align: right;
+}
+
+.navegacao__menu-hamburguer img {
+  border-radius: 5px;
+  width: 10%;
+}
+
 .header-personalidade__img {
+  background-attachment: fixed;
   background-image: linear-gradient(
       to top,
-      rgba(3, 3, 3, 0.781) 0,
-      rgba(196, 61, 223, 0.418) 50%,
+      rgba(31, 17, 41, 0.673) 0,
+      rgba(119, 39, 135, 0.418) 50%,
       #69156975 100%
     ),
     url(../imgs/gh-titulo.jpg);
+  align-items: flex-end;
+  padding-bottom: 3rem;
+}
+
+.header-personalidade__titulo {
+  text-align: center;
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .img_link,
@@ -21,7 +56,7 @@
 }
 .img-link:visited,
 .site_link:visited {
-  color: #74195f;
+  color: rgb(240, 163, 255);
 }
 
 .secao-divas__referencias--link {
@@ -30,9 +65,17 @@
 .secao-divas__referencias--link:hover {
   color: #63458a;
 }
-/* .secao-divas__referencias--link:visited{
+.secao-divas__referencias--link:visited {
   color: #74195f;
-} */
+}
+
+.secao-diva.container {
+  margin: 0;
+}
+
+.secao-divas__referencias {
+  margin: 4rem 0;
+}
 
 .navegacao_nav-color,
 .secao-cta__btn,
@@ -46,7 +89,6 @@
   text-align: center;
   padding: 1rem 3rem;
   border-radius: 1rem;
-  margin: ;
 }
 
 #secao-diva__slide-show p {
@@ -57,7 +99,7 @@
 }
 
 .secao-diva__artigo {
-  margin-top: 3rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,7 +107,8 @@
 }
 
 .secao-diva__titulo {
-  padding-bottom: 1rem;
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
 }
 
 .card-header button:hover {
@@ -101,15 +144,17 @@ body {
 }
 
 aside nav {
+  margin: 20px;
   white-space: nowrap;
 }
 aside nav ul {
   list-style: none;
   margin: 0;
+  margin-left: 1rem;
   padding: 0;
 }
 /* Only stick if you can fit */
-@media (min-height: 300px) {
+@media (min-height: 400px) {
   aside nav {
     height: 100%;
   }
@@ -151,4 +196,105 @@ main {
 section {
   padding: 2rem;
   margin: 0 0 2rem 0;
+}
+
+@media (max-width: 768px) {
+  aside nav {
+    display: none;
+  }
+  .secao-autora__about {
+    width: 400px;
+  }
+}
+
+#legado {
+  border: 2px solid #896ab1;
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#legado h4 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.secao-autora__about {
+  background-color: #63458a;
+}
+.secao-autora__about p {
+  color: white;
+}
+
+.secao-divas__referencias {
+  padding: 3rem;
+  background-color: #896ab15d;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.667);
+  border-radius: 1rem;
+}
+
+/* BUG */
+
+.secao-diva__bug--pergunta,
+.secao-diva__bug--resposta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.secao-diva__bug--pergunta{
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .secao-diva__bug--pergunta,
+  .secao-diva__bug--resposta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .secao-diva__imagem-pergunta {
+    width: 50%;
+  }
+  .secao-diva__foto-bug {
+    width: 50%;
+  }
+  .secao-diva__bug--resposta figure {
+    width: 30%;
+  }
+}
+
+.secao-diva__btn {
+  align-items: center;
+  background: #63458a;
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  height: 45px;
+  padding: 0 30px;
+  color: #fff;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  will-change: transform;
+}
+
+.secao-diva__btn:hover {
+  background: darken(#63458a, 10%);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.2);
+  transform: translate3d(0, -2px, 0);
+}
+
+/* Bug ativado e desativado */
+
+.secao-diva__bug--resposta {
+  max-height: 60rem;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+
+.secao-diva__bug--desativada {
+  max-height: 0;
+  transition: max-height 0.5s;
 }
