@@ -1,3 +1,13 @@
+/* --- MOBILE FIRST - iPhone 7 - width < 768px --- */
+/* --- GERAL --- */
+/*
+unidades preferidas para esse CSS
+margin, padding: rem
+font-size: rem
+width: %
+max-width: % ou px
+*/
+
 .header-niede-guidon {
     background-image:
       linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
@@ -15,7 +25,8 @@
     height: 500px;
 }
 
-/* section1 */
+
+/* Section 1 - Biografia */
 .bio-niede-guidon{
   display: block;
   margin: 5%;
@@ -24,7 +35,7 @@ h2{
   font-size: 2rem;
   text-transform: uppercase;
   color: #63458a;
-  margin: 5%;
+  margin-top: 0;
 }
 .h2-cover{
   color: white;
@@ -34,11 +45,19 @@ p{
   font-size: 1.5rem;
   line-height: 1.5;
 }
-li{
-  font-size: 1.2rem;
+
+.premios-container{
+  background: #ececec;
+  border-radius: 20px;
+  padding: 32px;
+  height: fit-content;
+}
+.premios-container li{
+  font-size: 1.5rem;
+  line-height: 1.8;
 }
 
-/* section2 - imagem */
+/* Section 2 - Imagem fixa */
 
 .image--container{
 	position: relative;
@@ -66,11 +85,101 @@ li{
   background-size: cover; 
 }
 
-/* section3 */
+/* Section 3 - Hipótese */
 .hipotese-niede-guidon{
   margin: 5%;
+  display: block;
 }
 
 .hipotese-niede-guidon img {
   border-radius: 20px;
+}
+.img-hover{
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.6);
+  transition: box-shadow 300ms ease-in 0s;
+}
+.img-hover:hover{
+  box-shadow: 1px 3px 10px #63458a;
+}
+
+/* Section 4 - Slideshow */
+* {box-sizing: border-box;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding: 24px;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Indicadores 3 pontos */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 10px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Referências */
+.ref-container{
+  background: #ececec;
+  border-radius: 20px;
+  padding: 24px;
+  margin: 10%;
+}
+h3{
+  color: #63458a;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.ref-container a{
+  font-size: 1.5rem;
+}
+
+/* AUTORA */
+.secao-autora__about img{
+  width: 110px;
+  height: 110px;
+  margin: 10px;
+}
+
+/* Versão DESKTOP */
+@media(min-width:768px) and (max-width:2010px){
+  .bio-niede-guidon, .hipotese-niede-guidon{
+    display: flex;
+    justify-content: space-around;
+  }
+  .bio-niede-guidon div, .hipotese-niede-guidon div{
+    width: 48%;
+  }
 }
