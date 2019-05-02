@@ -1,0 +1,319 @@
+
+/* --- MOBILE FIRST - iPhone 7 - width < 768px --- */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px; /* definir uma font-size padrão */
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* --- NAV --- */
+.navegacao {
+    background-color: #6745826b;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 5px rgba(0,0,0,2);
+    padding: 1.5rem;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    transition: all 1s;
+}
+
+.navegacao_logo {
+    max-width: 200px;
+}
+
+.navegacao_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navegacao_itens {
+    transition: all 1s;
+    position: absolute;
+    right: -700px;
+    top: 85px;
+    width: 80%;
+    text-align: center;
+    padding: 2rem 0;
+   
+}
+
+.navegacao_itens.ativo {
+    display: block;
+    right: 0;
+    top: 85px;
+    width: 100%;
+    text-align: center;
+    padding: 3rem 0;
+    transition: right .5s;
+}
+
+.navegacao_itens li > a {
+    transition: all .5s;
+}
+
+.navegacao_itens li > a:hover {
+    color: #C083B9;
+}
+
+.navegacao__menu-hamburguer img {
+    border-radius: 5px;
+}
+
+.navegacao__nav {
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+}
+
+.navegacao__nav li {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.navegacao_redes-sociais a {
+    margin: 0 1rem;
+}
+
+
+
+/** ---- PERSONALIDADE ---- **/
+/* --- HEADER --- */
+ .header-personalidade {
+    background-image:
+      linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
+      rgba(196, 61, 223, 0.418) 50%,
+      #69156975 100%),
+      url(./imgs/img-2.jpg);
+    background-position: center;
+    display: flex;
+    background-size: cover;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 2rem;
+    color: white;
+    min-height: 80vh;
+    height: 500px;
+}
+
+.header-personalidade__titulo {
+    text-align: center;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+}
+
+/* --- PEFIL DIVA--- */
+.secao-diva {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
+    margin: 0 auto;
+}
+
+.secao-diva__titulo {
+    text-align: center;
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: #674582;
+}
+
+.secao-diva__titulo_esq {
+    margin-right: auto;
+}
+
+.secao-diva p {
+    color: #63458a;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.secao-diva__introducao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secao-diva__foto-perfil {
+    max-width: 18rem;
+    margin: 1rem;
+}
+
+.secao-diva_citacao p {
+    transition: all .5s;
+    font-weight: bold;
+    border: 1px solid #63458a;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.7rem;
+}
+
+.secao-diva_citacao p:hover {
+    transform: scale(1.1);
+}
+
+.secao-diva__historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+}
+.secao-diva_poema{
+    transition: all .5s;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.7rem;
+}
+.secao-diva_poema h6{
+color: #63458a;
+}
+
+/* --- AUTORA --- */
+.secao-autora {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.secao-autora__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.arrow {
+    cursor: pointer;
+    width: 0; 
+    height: 0; 
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #63458a;
+    transition: all .5s;
+}
+
+.arrow-close {
+    cursor: pointer;
+    transition: all .5s;
+    width: 0; 
+    height: 0; 
+    border-bottom: 10px solid #63458a;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    margin-bottom: 25px;
+}
+
+
+.secao-autora__foto a:hover {
+    opacity: 0.8;
+}
+
+.secao-autora__dados {
+    color: #63458a;
+}
+
+.secao-autora__dados p {
+    margin: 15px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.secao-autora__dados span {
+    font-size: 28px;
+}
+
+.secao-autora a {
+    font-style: italic;
+    text-decoration: underline;
+}
+.secao-autora__about {
+    background-color: rgb(248, 205, 248);
+    border-radius: 35px;
+    display:flex;
+    flex-direction: row;
+    width: 80%;
+}
+.secao-autora__about img{
+    border-radius: 50px;
+    width: 75px;
+    height: 110px;
+    margin: 10px;
+}
+
+.secao-autora__about p {
+    line-height: 23px;
+    font-size:15px;
+    margin-right: 10px;
+}
+
+.closed{
+    display:none;
+    transition: all 1s;
+}
+.opened{
+    display: flex;
+    transition: all 1s;
+}
+
+.secao-cta {
+    text-align:right;
+    padding: 4rem 4rem;
+}
+
+.secao-cta__btn {
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: #674582;
+    color: white;
+    font-size: 20px;
+}
+
+.secao-cta__btn:hover{
+    opacity: 0.8;
+}
+
+/* DESKTOP */
+@media(min-width:1024px) {
+    .navegacao_box {
+        max-width: 80%;
+    }
+    .header {
+        min-height: 90vh;
+    }
+    .navegacao_itens li {
+        font-size: 1.5rem;
+        margin: 0 1rem;
+    }
+    .principal {
+        max-width: 650px;
+    }
+    
+}

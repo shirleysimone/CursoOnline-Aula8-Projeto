@@ -1,0 +1,710 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px; /* definir uma font-size padrão */
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* define que as imagens tem que ter o tamanho máximo da div mãe */
+.img-responsive {
+
+width: 100%;
+} 
+
+
+/* define o tamanho da caixa */
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+}
+
+/* --- BOTAO --- */
+
+.btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    font-size: 1.8rem;
+}
+
+.btn_roxo {
+    color: white;
+    background-color: #C083B9;
+    display: block;
+    max-width: 250px;
+    text-align: center;
+    transition: all .5s;
+    margin: 0 auto;
+}
+
+.btn_roxo:hover,
+.btn_roxo:focus {
+    transform: translateY(-1rem);
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+    background-color: rgb(192, 156, 188);
+}
+
+.btn_roxo:active {
+    transform: translateY(-3rem);
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+}
+
+.btn_center {
+    margin: 0 auto;
+}
+
+/* --- NAV --- */
+.navegacao {
+    background-color: #3f066e6b;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+    padding: 1.5rem;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    transition: all 1s;
+}
+
+.navegacao__logo {
+    max-width: 200px;
+}
+
+.navegacao__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navegacao__itens {
+    transition: all 1s;
+    position: absolute;
+    right: -700px;
+    top: 85px;
+    width: 100%;
+    text-align: center;
+    padding: 3rem 0;
+   
+}
+
+.navegacao__itens.ativo {
+    display: block;
+    right: 0;
+    top: 85px;
+    width: 100%;
+    text-align: center;
+    padding: 3rem 0;
+    transition: right .5s;
+}
+
+.navegacao__itens li > a {
+    transition: all .5s;
+}
+
+.navegacao__itens li > a:hover {
+    color: #C083B9;    
+}
+
+.navegacao__menu-hamburguer img {
+    border-radius: 5px;
+}
+
+.navegacao__nav {
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+}
+
+.navegacao__nav li {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.navegacao__redes-sociais a {
+    margin: 0 1rem;
+}
+
+
+/* --- HEADER --- */
+.header-personalidade {
+    background-image:
+
+      url(../imgs/banner.jpg);
+    background-position: center;
+    display: flex;
+    background-size: cover;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 2rem;
+    color: white;
+    min-height: 80vh;
+    height: 500px;
+
+  
+}
+
+.header-personalidade__titulo {
+    text-align: center;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+}
+
+
+
+/* --- FOOTER --- */
+.rodape {
+    background-color: #323534;
+    color: white;
+    font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: .8rem;
+}
+
+.rodape__principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.rodape__principal > * {
+    margin: 1rem 0;
+}
+
+.rodape__navegacao > li {
+    font-size: 1.1rem;
+    margin: 1rem;
+}
+
+.rodape__navegacao a {
+    transition: all .5s;
+}
+
+.rodape__navegacao a:hover {
+    color: #C083B9;
+}
+
+.rodape__logo {
+    max-width: 200px;
+}
+
+.rodape__redes-sociais a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.rodape__redes-sociais a:hover {
+    color: #C083B9;
+}
+
+.rodape__redes-sociais img {
+    max-width: 10px;
+    margin-right: .5rem;
+}
+
+.rodape__redes-sociais span {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.rodape__cc {
+    width: 100%;
+    background-color: #292A2A;
+    font-size: 1rem;
+    opacity: 0.5;
+    text-align: center;
+}
+
+/*Fotos com  quadro Descricao*/
+
+  .foto1, .foto2 {
+    display:flex;
+    justify-content: center;
+  }
+
+  .maquina__img {
+     width: inherit;
+    height: 370px;
+    filter:grayscale(100%);
+    transition: all 1s;
+  }
+
+  .ada__img {
+    width: 555px;
+    height: 370px;
+    filter:grayscale(100%);
+    transition: all 1s;
+    
+  }
+
+  .maquina__img:hover{
+    filter:grayscale(0%);
+  }
+  .ada__img:hover{
+    filter:grayscale(0%);
+  }
+  
+ .maquina__text-caixa, .maquina__img-pequena, .ada__text-caixa, .ada__img-pequena {
+    width: 555px;
+    height: 370px;
+  }
+  
+   .ada__text {
+   text-align: left;
+   color: #F3F3F3;;
+   padding: 0em 1em;
+   margin-top :0;
+   
+  }
+  
+  .hr-maquina,.hr-ada {
+    
+    margin-right: 15px;
+    border: 0;
+    border-top: 4px solid rgb(183, 38, 147);
+    width:30%;
+  }
+ 
+  .maquina {
+    color: #F3F3F3;
+    padding: 0em 1em;
+    margin-bottom:0;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size:18px;
+  }
+  .maquina__text {
+    padding: 0em 1em;
+    margin-top :0;
+    margin-left: 82px;
+  }
+   .maquina__text-caixa{
+    text-align:right;
+    color: grey;
+    padding: 4em 1em;
+    background-color: black;
+  }
+  
+  .ada__text-caixa {
+    background-color: black;
+    padding: 4em 1em;
+  }
+  
+  /**CONTATO **/ 
+  
+  .contato {
+    background: linear-gradient(to bottom, rgba(22, 22, 22, .1) 0, rgba(22, 22, 22, .5) 75%, #161616 100%), url(../img/foto-footer.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contato img {
+    padding-top: 3em;
+    width: 2.5%;
+  }
+  
+  .contato p {
+    margin: 1em;
+    color: white;
+    font-size: 20px;
+  }
+ 
+  
+/* --- PEFIL DIVA--- */
+.secao-diva {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
+    margin: 0 auto;
+}
+
+.secao-diva__titulo {
+    text-align: center;
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: #674582;
+}
+/* Efeito javascript */
+@keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+ h3::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+  }
+/*---------------------------------------------- */
+.secao-diva__titulo_esq {
+    margin-right: auto;
+}
+
+.secao-diva p {
+    color: #63458a;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.secao-diva__introducao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secao-diva__foto-perfil {
+  
+    max-width: 18rem;
+    margin: 1rem;
+}
+
+.secao-diva__citacao p {
+    transition: all .5s;
+    font-weight: bold;
+    border: 1px solid #63458a;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.7rem;
+}
+
+.secao-diva__citacao p:hover {
+    transform: scale(1.1);
+}
+
+.secao-diva__historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+/* --- AUTORA --- */
+.secao-autora {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.secao-autora__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.arrow {
+    cursor: pointer;
+    width: 0; 
+    height: 0; 
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #63458a;
+    transition: all .5s;
+}
+
+.arrow-close {
+    cursor: pointer;
+    transition: all .5s;
+    width: 0; 
+    height: 0; 
+    border-bottom: 10px solid #63458a;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    margin-bottom: 25px;
+}
+
+
+.secao-autora__foto a:hover {
+    opacity: 0.8;
+}
+
+.secao-autora__dados {
+    color: #63458a;
+}
+
+.secao-autora__dados p {
+    margin: 15px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.secao-autora__dados span {
+    font-size: 28px;
+}
+
+.secao-autora a {
+    font-style: italic;
+    text-decoration: underline;
+}
+.secao-autora__about {
+    background-color: rgb(248, 205, 248);
+    border-radius: 5px;
+    display:flex;
+    flex-direction: row;
+}
+.secao-autora__about img{
+    border-radius: 8px;
+    width: 75px;
+    height: 110px;
+    margin: 10px;
+}
+
+.secao-autora__about p {
+    line-height: 23px;
+    font-size:15px;
+    margin-right: 10px;
+}
+
+.closed{
+    display:none;
+    transition: all 1s;
+}
+.opened{
+    display: flex;
+    transition: all 1s;
+}
+
+.secao-cta {
+    text-align:right;
+    padding: 4rem 4rem;
+}
+
+.secao-cta__btn {
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: #674582;
+    color: white;
+    font-size: 20px;
+}
+
+.secao-cta__btn:hover{
+    opacity: 0.8;
+}
+/*** MEDIA QUERIES ***/
+
+/* TABLET */
+@media (min-width: 768px) {
+    /* --- NAV --- */
+    .navegacao__itens {
+        position: static;
+        display: flex;
+        padding: 0;
+        width: auto;
+    }
+
+    .navegacao__nav {
+        margin-bottom: 0;
+    }
+    
+    .navegacao__itens ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .navegacao__itens li {
+        font-size: 1.2rem;
+        margin: 0 .6rem;
+    }
+    
+    .navegacao__menu-hamburguer {
+        display: none;
+    }
+
+    /* --- HEADER --- */
+    .header {
+        min-height: 75vh;
+        text-align: left;
+        padding: 5rem 10rem;
+    }
+
+    .principal__titulo {
+        font-size: 2.9rem;
+    }
+    
+    .principal__sub {
+        font-size: 1.8rem;
+    }
+
+    .principal__btn {
+        margin: 0;
+    }
+    
+    
+    /* --- SECTION MARAVILHOSAS --- */
+    .maravilhosas {
+        padding: 4rem 0;
+    }
+
+    .maravilhosas__box > div {
+        max-width: 200px;
+        margin: 5rem;
+    }
+
+    .maravilhosas__perfil p {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    
+    /** PERSONALIDADE **/
+    /* --- OUTRA HEADER --- */
+    .header-personalidade {
+        padding: 0 20rem;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .header-personalidade__titulo {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+  
+     /* --- FOOTER --- */
+     .rodape {
+        padding-top: 0;
+    }
+
+    .rodape__principal {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .rodape__logo img {
+        max-width: 250px;
+    }
+
+    .rodape__navegacao > li {
+        font-size: 1.5rem;;
+    }
+    
+}
+
+ @media (min-width: 1024px) {
+    .principal {
+        max-width: 650px;
+    }
+    .secao-diva__introducao {
+        flex-direction: row;
+        margin: 3rem 0;
+    }
+    .secao-diva__foto-perfil {
+        max-width: 100%;
+        margin: 0 4rem;
+    }
+    .secao-diva p {
+        font-size: 1.7rem;
+    }
+    .secao-diva__citacao p {
+        font-size: 2.5rem;
+        padding: 4rem;
+    }
+    .secao-autora__about {
+        width: 400px;
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .secao-autora__dados {
+        margin: 0 3rem;
+    }
+    
+
+}
+
+
+/* DESKTOP */
+@media (min-width: 1440px) {
+    .navegacao__box {
+        max-width: 80%;
+    }
+    .header {
+        min-height: 90vh;
+    }
+    .navegacao__itens li {
+        font-size: 1.5rem;
+        margin: 0 1rem;
+    }
+    .principal {
+        max-width: 650px;
+    }
+
+
+    
+}
+/* MOBILE */
+@media(min-width:320px) and (max-width:768px){
+
+
+      .foto1, .foto2 {
+      flex-direction: column;
+      align-items: center;
+     
+      }
+      .maquina__text-caixa,.ada__text-caixa {
+      
+        font-size: 13px;
+        width: 555px;
+        height: 210px;
+        padding: 0em 1em;
+        margin-bottom:0.5em;
+      }
+      .hr-maquina, .hr-ada {
+        display: none;
+      }
+      .ada__text,.maquina__text{
+          margin-left: 68px;
+          width: 393px;
+          padding:13px;
+      }
+      .seta_img{
+        width: 10%;
+    }
+}

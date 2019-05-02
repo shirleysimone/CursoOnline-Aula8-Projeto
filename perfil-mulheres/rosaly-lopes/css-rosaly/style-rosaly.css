@@ -1,0 +1,309 @@
+/* desktop version */
+
+.links-texto{
+    background-color: #66CDAA;
+    color: white;
+    padding: 1px 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.links-texto:hover{
+  background-color: #7FFFD4;}
+
+.links-texto:active{
+    background-color: #7FFFD4;}
+
+.header-personalidade-rosaly {
+    background-image:
+      linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
+      rgba(196, 61, 223, 0.418) 50%,
+      #66CDAA 100%),
+      url(../assets-rosaly/cassini-01.png);
+    background-position: center;
+    display: flex;
+    background-size: cover;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 2rem;
+    color: white;
+    min-height: 80vh;
+    height: 500px;
+}
+
+.secao-diva-rosaly{
+  color: #363636;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+.secao-diva-rosely__titulo {
+  text-align: left;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+.content-media__description{
+  color: #555;
+  margin-top: 1rem;
+  display: block;
+  font-size: 12px;
+ 
+}
+
+.secao-cta-rosaly__btn{
+  background-color: #66CDAA;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.secao-autora__btn{
+  background-color: #66CDAA;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.secao-autora__btn:hover{
+    background-color: #7FFFD4;}
+
+/* inicio modal */
+
+.modal-autora {
+  padding: 5% 20%;
+  text-align:center;
+
+}
+
+.modal-autora:hover{
+    background-color: #7FFFD4;
+}
+
+.text {
+  margin-bottom: 1px;
+}
+
+.btn {
+  background:#66CDAA;
+  border-radius:5px;
+  text-transform:uppercase;
+  color: white;
+  
+  &.closebtn {
+    padding: 5px 10px;
+  }
+  &.openbtn {
+    padding: 20px;
+    
+    &:hover {
+      box-shadow: 0 5px 5px 0px rgba(0,0,0,0.4);
+    }
+    
+  }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modal-content {
+  background: #fefefe;
+  font-size: 14px;
+    width: 400px;
+  height: 35vh;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 5px;
+}
+
+.modal-link{
+  background-color: #66CDAA;
+  color: white;
+  padding: 2px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.modal-link:hover{
+  background-color: #7FFFD4;
+}
+
+.modal:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+#close {
+  padding: 10px;
+  display:none;
+}
+
+/* fim modal */
+
+/* inicio slideshow */
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #66CDAA;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* fim slideshow */
+
+
+/* inicio versão mobile */
+@media(min-width:360px) and (max-width: 640px){
+.secao-diva-rosaly{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
+    padding-bottom: 0;
+    margin: 0 auto;
+}
+    .secao-diva__foto-perfil {
+        max-width: 40%;
+    } 
+  
+    .header-personalidade-rosaly {
+      min-height: 30vh;
+      height: 200px;
+  }
+
+  .header-personalidade__titulo {
+    text-align: center;
+    font-size: 1.6rem;
+    text-transform: uppercase
+
+}
+
+.secao-autora__btn{
+    font-size: 10px;
+    padding: 10px 82px;
+
+}
+
+.secao-cta{
+  text-align: center;
+  padding: 4rem 4rem;
+}
+
+.btn{
+  font-size:10px;
+}
+
+.modal-content{
+  width: 332px;
+}
+/* fim versao mobile */

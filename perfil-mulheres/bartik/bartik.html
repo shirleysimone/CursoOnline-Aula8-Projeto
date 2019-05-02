@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jean Jennings Bartik</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./assests/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assests/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <input type="checkbox" id="checar">
+    <div id="nav__box">
+        <label for="checar">
+            <img src="./assets/menu-nav.png" class="checar__img">
+            <img src="assets/logo-white.png" class="checar__img2">
+        </label>
+    </div>
+    <nav>
+        <ul class="nav_lista">
+            <li><a href="#home" class="nav_item">Home</a></li>
+            <li><a href="#fatos" class="nav_item">Ms. Bartik</a></li>
+            <li><a href="#curiosidades" class="nav_item">Saiba mais</a></li>
+            <li><a href="https://natalyapeixoto.github.io/CursoOnline-Aula8-Projeto/index.html" target="_blank" class="nav_item">Mais mulheres</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="container">
+
+        <div class="perfil__img">
+            <figure>
+                <img src="assets/foto_atual.jpg" class="perfil__img-1" alt="foto de Jean Jennings Bartik">
+                <figcaption>J.J.Bartik - fonte: MacTutor</figcaption>
+            </figure>
+            <button class="perfil__button">Science Diva!</button>
+
+        </div>
+
+        <div class="perfil_conteudo">
+            <h1>Jean Jennings Bartik</h1>
+            <p class="perfil__conteudo-texto">Nascida em 1924, Betty Jean Jennings Bartik foi uma cientista da computação, matemática e <span>software pioneer</span> que desempenhou um papel de importância no desenvolvimento do computador ENIAC (Computador e Integrador Numérico Eletrônico), o primeiro computador digital totalmente eletrônico do mundo.</p><br />
+
+            <p class="perfil__conteudo-chamada">Clique no Science Diva e coroe esta rainha!</p>
+
+        </div>
+
+
+    </header>
+
+    <section id="fatos">
+        <div class="fatos__conteudo">
+            <h2>Bartik e as ENIAC Girls!</h2>
+            <p class="fatos__conteudo-texto">Bartik, foi a única matemática feminina de sua classe na Northwest Missouri State Teachers College. Formou-se em 1945, pouco antes de ser recrutada pelo Exército dos Estados Unidos para calcular 'à mão' trajetórias de tiro de artilharia. Naquele mesmo ano, junto com outras 5 mulheres foi escolhida para programar e depurar o que viria a ser o ENIAC.</p>
+
+            <p class="fatos__conteudo-texto">Posteriormente também participou na programação do BINAC (Computador Binário Automático) e o UNIVAC (Computador Automático Universal), que foi um dos primeiros computadores comerciais. Inicialmente seu trabalho não foi reconhecido pela comunidade científica. Somente em 1997 que Bartik e suas colegas do ENIAC foram admitidas no Hall da Fama Internacional de Mulheres na Tecnologia e foram e tiveram sua história representada no documentário <a href="https://www.youtube.com/watch?v=PuFJE0tuz1c" target="_blank">"Top Secret Rosies: Os computadores femininos da Segunda Guerra Mundial"</a>  lançado em 2010. Em 2008 ela foi nomeada membro do Computer History Museum em Mountain View na Califórnia e recebeu o prêmio <span>Pioneer</span> da IEEE Computer Society em 2009.</p>
+            
+            <figure class="fatos__conteudo-fig">
+            <img src="assets/eniac_WIKIPEDIA1.PNG" alt="computador ENIAC" class="fatos__conteudo-img">
+                <figcaption>Computador ENIAC - Fonte: Wikipedia</figcaption>
+            </figure>
+
+            <p class="fatos__conteudo-texto">Betty Jean Jennings Bartik faleceu em março de 2011 no estado de Nova York (EUA). Mas seu legado permanecerá nos inspirando a ter orgulho ser mulher para sempre!</p>
+
+        </div>
+
+
+    </section>
+
+    <section id="curiosidades">
+        <h2>Saiba mais!</h2>
+        <p class="curiosidades__conteudo-texto">Conheça mais sobre a vida e o trabalho de J. J. Bartik e as ENIAC Girls. <br /> É possível acessar conteúdos gratuitos disponíveis na internet. Como estes videos:</p>
+        <div class="curiosidades__conteudo">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aPweFhhXFvY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="curiosidades__conteudo--item1"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/buAYHonF968?start=221" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="curiosidades__conteudo--item1"></iframe>
+        </div>
+    </section>
+
+    <section id="thilla" >
+        <button class="thilla__button" onclick="mostrar_autora(this)" onmouseout="esconder_autora(this)">Página desenvolvida por {Thilla Bányai} <img src="assets/triangulo.png" width="15px"></button>
+        <div id="autora" class="thilla__conteudo efeito_img">
+            <p class="thilla__conteudo-texto">Sou Front-End Developer com habilidades em HTML, CSS e JavaScript. Iniciei meus estudos na programação como autodidata e posteriormente tive o privilégio de ser selecionada para um curso intensivo da {Reprograma} do qual este projeto faz parte. </p>
+        </div>
+
+        <div>
+            <p class="fontes"><i>Todas as informações e fotografias que você viu nesta página foram coletadas nas fontes abaixo:</i><br/>
+                <a class="fontes__links" href="https://www.britannica.com/biography/Jean-Bartik" target="_blank">Britannica</a> <a href="http://www-history.mcs.st-and.ac.uk/Biographies/Bartik.html" class="fontes__links" target="_blank">MacTutor</a><a href="https://pt.wikipedia.org/wiki/Jean_Bartik" class="fontes__links" target="_blank">Wikipedia</a>
+                </p>
+        </div>
+
+    </section>
+
+    <footer class="rodape">
+        <div class="rodape__repro">
+            <a href="http://www.reprograma.com.br/" target="_blank" class="rodape__repro-link">Conheça a {reprograma}</a>
+        </div>
+        <div class="rodape__box">
+            <div class="rodape__logo">
+                <img class="rodape__logo-img" src="assets/logo-white.png" alt="logo M de Maravilhosa">
+            </div>
+
+            <div class="rodape__sociais">
+                <a href="https://www.facebook.com/ReprogramaBr/" target="_blank" class="rodape__sociais-item">
+                    <img src="assets/icon-facebook.png" alt="Íconde do Facebook" width="50" class="rodape__sociais-icon">
+                </a>
+                <a href="https://twitter.com/ReprogramaBr" target="_blank" class="rodape__sociais-item">
+                    <img src="assets/icon-twitter.png" alt="Ícone do Twitter" width="50" class="rodape__sociais-icon">
+                </a>
+                <a href="https://www.instagram.com/reprogramabr/" target="_blank" class="rodape__sociais-item">
+                    <img src="assets/icon-instagram.png" alt="Ícone do Instagram" width="50" class="rodape__sociais-icon">
+                </a>
+                <a href="https://www.linkedin.com/company/reprogramabr/" target="_blank" class="rodape__sociais-item">
+                    <img src="assets/icon-linkedin.png" alt="Ícone do LinkedIn" width="50" class="rodape__sociais-icon">
+                </a>
+            </div>
+
+            <div class="rodape__redes">
+                <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
+                    <img src="assets/fb-icone.png" alt="Icone do facebook Reprograma" class="rodape__redes-icon">
+                    <span>/br.mdemaravilhosa</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="rodape__cc">
+            <p class="rodape__cc-repro">Feito com &nbsp;<img src="assets/heart.PNG" alt="amor" class="rodape__cc-img">&nbsp;por {Reprograma} - 2019</p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+
+</body></html>
