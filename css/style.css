@@ -108,7 +108,7 @@ li {
 .navegacao__itens {
     transition: all 1s;
     position: absolute;
-    right: -700px;
+    right: -800px;
     top: 85px;
     width: 100%;
     text-align: center;
