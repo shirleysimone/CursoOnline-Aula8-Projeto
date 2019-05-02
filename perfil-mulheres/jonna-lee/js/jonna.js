@@ -58,3 +58,18 @@ botao5.addEventListener('click',function(){
       textoRtf.style.display = "none";
 }
 })
+
+
+function rollover(cubobranco)
+    {
+
+        cubobranco.src = "cubob.png";
+
+    }
+
+    function mouseaway(cubobranco)
+    {
+
+        cubobranco.src = "cube.png";
+
+    }
