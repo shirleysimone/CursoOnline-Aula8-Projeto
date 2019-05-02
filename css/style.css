@@ -108,7 +108,7 @@ li {
 .navegacao__itens {
     transition: all 1s;
     position: absolute;
-    right: -700px;
+    right: -800px;
     top: 85px;
     width: 100%;
     text-align: center;
@@ -131,7 +131,7 @@ li {
 }
 
 .navegacao__itens li > a:hover {
-    color: #C083B9;
+    color: #C083B9;     
 }
 
 .navegacao__menu-hamburguer img {
@@ -585,6 +585,7 @@ li {
         text-align: center;
     }
 }
+
 
 @media (min-width: 1024px) {
     .principal {
