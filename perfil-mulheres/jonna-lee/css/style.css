@@ -109,7 +109,7 @@ html {
 }
 
 .sobreJonna__img img {
-    max-width:400px;
+    max-width:300px;
     height:auto;
 }
 
@@ -160,7 +160,7 @@ html {
 }
 
 .bioJonna__img img {
-    width:400px;
+    width:300px;
     height:auto;
 }
 
@@ -186,11 +186,15 @@ html {
 .projetosJonna__img {    
     text-align:center;
     margin-right:100px;
+    display:flex;
+}
+
+.cubos {
+    display:flex;
 }
 
 .projetosJonna__img img {
     padding-bottom:15px;
-
 }
 
 .projetosJonna {
@@ -244,17 +248,69 @@ html {
     max-width:100%;
 }
 
-@media (max-width: 768px) {
-
-.container {
-    max-width: 768px;
+.screenshots img {
+    transition: transform .2s;
+}
+.screenshots img:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
 }
 
-.navegacao {
-    max-width:768px;
+@media screen and (max-width: 768px){
+
+.sobreJonna__conteudo {
+    display:block;
 }
 
-.projetos__Jonna {
-    max-width:768px;
+.bioJonna__conteudo {
+    display:block;
+}
+
+.projetosJonna__conteudo {
+    display:block;
+}
+
+.projetosJonna__img {
+    padding-bottom:30px;
+    display:block;
+}
+
+.header__jonna {
+    width:100%;
+}
+
+.projetosJonna {
+    display:block;
+}
+
+.cubos {
+    display:block;
+}
+
+.bioJonna p {
+    margin: 0 10px 0 10px;
+    line-height:25px;
+}
+
+.sobreJonna p {
+    margin: 0 10px 0 10px;
+    line-height:25px;
+}
+
+.navegacaoJonna {
+    margin: 0 0 0 20px;
+}
+
+.jonna__titulo {
+    margin: 0 0 30px 10px;
+}
+
+.sobreJonna__img {
+    margin: 0 0 0 10px;
+}
+
+.bioJonna__img {
+    margin: 0 0 0 10px;
 }
 }
