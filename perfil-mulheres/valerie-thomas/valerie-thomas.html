@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Valerie Thomas by Greyce Riquinho</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../favicon.icon" type="image/x-icon">
+</head>
+<body onload="typeWriter()">
+  <nav class="navegacao">
+    <div class="navegacao__box container">
+      <a class="navegacao__logo" href="../../index.html">
+        <img class="img-responsive" src="../../img/logo-white.png" alt="Logo M de Maravilhosa">
+      </a>
+    <div class="navegacao__itens" id="menuResponsivo">
+      <div class="navegacao__nav">
+        <ul>
+          <li>
+            <a href="../../index.html">Home</a>
+          </li>
+          <li>
+            <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navegacao__redes-sociais">
+        <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
+          <img src="../../img/icon-facebook.png" alt="Íconde do Facebook">
+        </a>
+        <a href="https://twitter.com/ReprogramaBr" target="_blank">
+          <img src="../../img/icon-twitter.png" alt="Ícone do Twitter">
+        </a>
+        <a href="https://www.instagram.com/reprogramabr/" target="_blank">
+          <img src="../../img/icon-instagram.png" alt="Ícone do Instagram">
+        </a>
+        <a href="https://www.linkedin.com/company/reprogramabr/" target="_blank">
+          <img src="../../img/icon-linkedin.png" alt="Ícone do LinkedIn">
+        </a>
+      </div>
+    </div>
+    <div class="navegacao__menu-hamburguer" id="btnResponsivo">
+      <a href="#">
+        <img src="../../img/menu-nav.png" alt="Menu de navegação">
+      </a>
+    </div>
+    </div>
+  </nav>
+  <main>
+    <section class="biography">
+      <div class="container">
+        <div class="biography__image">
+          <img src="img/vtprofile.png" class="biography__photo"  alt="Valerie Thomas sorrindo">
+        </div>
+        <div class="biography__text">
+          <h1 id="author-js" class="biography__author"></h1>
+          <p class="biography__text-typed">Apaixonada por tecnologia desde a infância, com apenas 8 anos de idade, sua curiosidade em saber como as coisas funcionavam, a inspiraram a levar pra casa seu primeiro livro: "The Boy’s First Book On Electronics" (O Primeiro Livro de Menino sobre Eletrônica) na esperança de que seu pai a ajudasse a realizar alguns projetos, já que ele gostava de consertar rádios e televisões. Mas ele negou-se a ajudá-la.</p>
+
+          <p class="biography__text-typed">Na escola só para meninas que frequentava, ela também não encontrou nenhum apoio. Na época, os assuntos científicos não eram considerados importantes ou adequados para mulheres. Mas a falta de encorajamento não a impediram de buscar seus sonhos. A curiosidade sempre falou mais alto e ela não desistiu de desenvolver suas aptidões!</p>
+
+          <p class="biography__text-typed">Foi só na universidade que o jogo finalmente virou! Confira abaixo alguns fatos relevantes e as contribuições dessa mulher maravilhosa!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="achievements">
+      <div class="container">
+        <div class="achievements__card">
+          <div class="card">
+            <div class="card__back">
+              <p class="p--default">Uma das duas únicas alunas do curso de Física na universidade, ela logo conquistou conhecimento matemático que a levaram ao cargo de analista de dados na NASA.</p>
+            </div>
+            <div class="card__front">
+              <img src="img/graduation.png" class="graduation">
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__back">
+              <p class="p--default">Em 1970, na NASA, ela desenvolveu a tecnologia do primeiro satélite a enviar imagens do espaço para a Terra e liderou todo o projeto.</p>
+            </div>
+            <div class="card__front">
+              <img src="img/satellite.png" class="satellite">
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__back">
+              <p class="p--default">Em 1980 ela patenteou o transmissor de ilusão ótica do qual a NASA vem usando até hoje. Usando dois espelhos côncavos, o transmissor produz a ilusão tridimensional.</p>
+            </div>
+            <div class="card__front">
+              <img src="img/illusion.png" class="illusion">
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__back">
+              <p class="p--default">Seus inventos revolucionaram a viagem ao espaço, as cirurgias e até o entretenimento 3D!</p>
+            </div>
+            <div class="card__front">
+              <img src="img/3d.png" class="tridimensional">
+            </div>
+          </div>          
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <p class="p--default about__title">Desenvolvido por Greyce Riquinho</p>
+      <div>
+        <img src="img/plus.png" class="about__plus" id="aboutPlus" onclick="myFunction()">
+        <div class="about__box" id="aboutBox">
+          <img src="img/greyce.jpg" alt="Foto de perfil de Greyce sorrindo" class="about__image">
+          <p class="p--default"> Aluna da primeira turma do curso de Front-End Online da <a href="https://reprograma.com.br/" target="_blank" class="about__link">{reprograma}</a>, curiosa por aprender mais e mais a cada dia. Conheça meus projetos no <a href="https://github.com/greycee" target="_blank" class="about__link">Github</a> e me ache no <a href="https://www.facebook.com/griquinho" target="_blank" class="about__link">Facebook</a> ou no <a href="https://www.linkedin.com/in/greyceriquinho/" target="_blank" class="about__link">LinkedIn.</a></p>
+          <p class="p--default">Pesquisa baseada no conteúdo disponibilizado por <a href="https://lemelson.mit.edu/resources/valerie-thomas" target="_blank" class="about__link">Lemelson-MIT Program</a>. Foto de Valerie retirada do site da <a href="https://landsat.gsfc.nasa.gov/a-face-behind-landsat-images-meet-dr-valerie-l-thomas/" target="_blank" class="about__link">Landsat da NASA</a> com estilização livre. Demais imagens, sem direitos autorais, retirados do <a href="https://www.freepik.com/" target="_blank" class="about__link">Freepik</a>.  
+        </div>
+    </section>
+
+    <div class="secao-cta"><a href="https://github.com/natalyapeixoto" target="_blank">
+      </a><a class="secao-cta__btn" href="../../index.html#mulheres-maravilhosas">Ver mais mulheres</a>
+    </div>    
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape__principal">
+      <ul class="rodape__navegacao">
+        <li>
+          <a href="../../index.html">Home</a>
+        </li>
+        <li>
+          <a href="http://www.reprograma.com.br/">Conheça a {reprograma}</a>
+        </li>
+      </ul>
+      <div class="rodape__logo">
+        <img class="img-responsive" src="../../img/logo-white.png" alt="logo M de Maravilhosa">
+      </div>
+      <div class="rodape__redes-sociais">
+        <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
+          <img src="../../img/fb-icone.png" alt="Icone do facebook Reprograma">
+          <span>/br.mdemaravilhosa</span>
+        </a>
+      </div>
+    </div>
+    <div class="rodape__cc">
+      <p>Creative Commons 2018 | Feito com amor por Reprograma</p>
+    </div>
+  </footer>
+  <script src="../../js/script.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
