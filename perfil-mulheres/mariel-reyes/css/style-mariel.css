@@ -1,0 +1,201 @@
+
+ p{
+    padding: 3rem;
+    font-size: 1rem;
+    font-style: initial;
+    
+ }
+
+ h1{
+     padding: 3rem;
+     text-align: end;
+     font-size: 1rem;
+     color:#C083B9;
+ }
+
+.header-mariel {
+    background: url(../imgs/mariel-thefutureisfemale.jpg) center no-repeat;
+    min-height: 70vh;
+    height: 480px;
+    background-size: cover;
+    filter: contrast(100%);
+    background-position-y:  5%;
+    display: flex;
+    align-items: flex-end;
+    padding: 11rem 2rem 5rem 2rem;
+    color: white;
+}
+
+.mariel-about__photo{
+    width: 80%;
+    margin: 0 10%;
+}
+
+.mariel-about__title{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.mariel-about__quote{
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.quote-color{
+    color: #69156975;
+    font-weight: bold;
+    font-style: italic;
+}
+.btn_center_mariel{
+    margin: 6px auto;
+}
+
+.img-divas{
+    width: 100%;
+    
+}
+
+/* modal fundo */
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* background-color: rgb(0, 0, 0); */
+    background-color: rgba(196, 61, 223, 0.418);
+}
+
+/* conteudo modal/caixa */
+.modal-founders{
+    background-color:rgba(93, 24, 107, 0.781);
+    margin: 15% auto;
+    padding: 20px;
+  
+    width: 80%;
+}
+
+.founder-photo{
+    width: 25%;
+    border-radius: 120%;
+    margin-left: 400px;
+}
+
+.btn-site{
+    color: white;
+}
+
+/* botao de fechar */
+.close{
+    color:#aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+  
+   #arrowTop {    
+    color: rgba(196, 61, 223, 0.418);
+    position: unset;
+    left: 5%;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    font-size: 2em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#arrowTop::before {
+  content: '▲';
+}
+
+#arrowTop:hover {
+    color: white;
+    transition: 0.3s;
+}
+.about-me{
+    margin: 1rem;
+}
+.about-me__information{
+    padding: 0.2rem;
+    font-size: 1rem;
+    text-align: end;
+}
+
+
+@media (min-width: 768px){
+    .header-mariel{
+        background-size: contain;
+        min-height: 0;
+    }
+    .mariel-about__title{
+        font-size: 3rem;
+    }
+    .mariel-about__photo{
+        margin: 1 10%;
+    }
+    .mariel-about__quote{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .mariel-history{
+        padding: 10vh;
+       
+    }
+
+    .img-divas{
+        width: 50%;
+        margin-left: 0;
+        margin: 0 25%
+    }
+
+    h1{
+        margin-left: auto;
+        font-size: 2.5rem;
+
+    }
+
+    p{
+       font-size: 2rem; 
+    }
+
+    .founder-photo{
+        width: 25%;
+        border-radius: 120%;
+        margin-left: 400px;
+    }
+
+    #arrowTop{
+        font-size: 6rem;
+    }
+
+    .about-me__information{
+        
+        font-size: 1rem;
+        
+    }
+    
+}
+@media (min-width: 1024px){
+    .header-mariel{
+        background-size: cover;
+    }
+    .about-me__information{
+        
+        font-size: 1rem;
+    
+    }
+    
+}

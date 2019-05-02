@@ -1,0 +1,16 @@
+.header-niede-guidon {
+    background-image:
+      linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
+      rgba(196, 61, 223, 0.418) 50%,
+      #69156975 100%),
+      url(./img/NIEDE-GUIDON.jpg);
+    background-position: center;
+    display: flex;
+    background-size: cover;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 2rem;
+    color: white;
+    min-height: 80vh;
+    height: 500px;
+}
