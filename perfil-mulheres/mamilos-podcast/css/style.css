@@ -1,0 +1,343 @@
+
+:root{
+    --modal-duration: 1s;
+    --modal-color: #BF7311;
+}
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px; /* definir uma font-size padrão */
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #F4F0E4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* define que as imagens tem que ter o tamanho máximo da div mãe */
+.img-responsive {
+    width: 100%;
+}
+
+/* define o tamanho da caixa */
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+}
+
+/* --- NAV --- */
+.navegacao {
+    background-color: #BF7311;
+    color: #F4F0E4;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+    padding: 1.5rem;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    transition: all 1s;
+}
+
+.navegacao__logo {
+    max-width: 200px;
+}
+
+.navegacao__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navegacao__itens {
+    transition: all 1s;
+    position: absolute;
+    right: -700px;
+    top: 85px;
+    width: 52%;
+    text-align: right;
+    padding: 3rem 0;
+   
+}
+
+.navegacao__itens.ativo {
+    display: block;
+    right: 0;
+    top: 85px;
+    width: 100%;
+    text-align: right;
+    padding: 3rem 0;
+    transition: right .5s;
+}
+
+.navegacao__itens li > a {
+    transition: all .5s;
+}
+
+.navegacao__itens li > a:hover {
+    color: #BF7311;
+}
+
+.navegacao__menu-hamburguer {
+    text-align: right;
+}
+
+.navegacao__menu-hamburguer img {
+    border-radius: 5px;
+    width: 10%;
+
+}
+
+.navegacao__nav {
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+}
+
+.navegacao__nav li {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.navegacao__redes-sociais {
+    box-sizing: border-box;
+}
+
+.navegacao__redes-sociais a {
+    margin: 0 1rem;
+}
+
+.navegacao__redes-sociais img {
+    width: 14%;
+}
+
+
+/* --- HEADER --- */
+.header {
+    min-height: 70vh;
+    height: 500px;
+    background: 
+        linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
+        rgba(191, 115, 17, 0.418) 50%,
+        #BF7311 100%),
+        url(../imgs/mamilos-capa.png);
+    background-size: cover;
+    filter: contrast(100%);
+    background-position-y:  5%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    padding: 11rem 2rem 5rem 2rem;
+    color: #F4F0E4;
+}
+
+.principal__titulo {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-shadow: 0px 5px 15px black;
+}
+
+.principal__sub {
+    font-weight: 300;
+    margin: 2rem 0 3rem 0;
+    font-size: 1.8rem;
+    text-shadow: 0px 0px 15px black;
+}
+
+/* --- FOOTER --- */
+.rodape {
+    background-color: #323534;
+    color: #F4F0E4;
+    font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: .8rem;
+}
+
+.rodape__principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.rodape__principal > * {
+    margin: 1rem 0;
+}
+
+.rodape__navegacao > li {
+    font-size: 1.1rem;
+    margin: 1rem;
+}
+
+.rodape__navegacao a {
+    transition: all .5s;
+}
+
+.rodape__navegacao a:hover {
+    color: #BF7311;
+}
+
+.rodape__logo {
+    max-width: 200px;
+}
+
+.rodape__redes-sociais a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.rodape__redes-sociais a:hover {
+    color: #BF7311;
+}
+
+.rodape__redes-sociais img {
+    max-width: 18px;
+    margin-right: .5rem;
+}
+
+.rodape__redes-sociais span {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.rodape__cc {
+    width: 100%;
+    background-color: #292A2A;
+    font-size: 1rem;
+    opacity: 0.5;
+    text-align: center;
+}
+
+/** ---- PERSONALIDADE ---- **/
+
+
+/*** PADRAO NAS SECOES ****/
+
+.secao{
+    margin-top: 2%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: orange;
+}
+
+.container {
+    padding: 20px;
+}
+
+.sobre-titulo {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: orange;
+    text-align: center;
+    float: center;
+    margin-top: 3%;
+}
+
+.sobre-titulo:hover {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: palevioletred;
+    text-align: center;
+    float: center;
+    margin-top: 3%;
+}
+
+
+
+.subtitulos-h3{
+    font-size: 2rem;
+    font-weight: 900;
+    color: orange;
+    margin-top: 3%;
+}
+
+.subtitulos-h3:hover{
+    font-size: 2rem;
+    font-weight: 900;
+    color: palevioletred;
+    margin-top: 3%;
+}
+
+p{
+    font-size: 1.7rem;
+    padding: 1%;
+    
+}
+
+.logo-mamilos{
+    float: center;
+    text-align: center;
+}
+
+.foto-autora{
+    width: 100%;
+    border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
+border: 0px none #000000;
+}
+
+
+.foto-podcast{
+    max-width: 200px;
+    border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
+border: 0px none #000000;
+    float: center;
+    text-align: center;
+}
+
+
+.botao-pagina{
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.botao-pagina a:hover{
+
+text-decoration: none;
+}
+
+
+.botao-classe{
+    margin-top: 2%;
+}
+/** COMPONENTE DA QUOTE DO BOOTSTRAP ****/
+.display-4{
+    color: palevioletred;
+    font-weight: 1200;
+}
+
+
+

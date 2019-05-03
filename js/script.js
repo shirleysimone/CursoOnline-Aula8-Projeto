@@ -39,7 +39,7 @@ try {
     })
 } catch {
     if(!buttonAutora) {
-        console.log('estamos na pagina home')
+        
     } 
 }
 
