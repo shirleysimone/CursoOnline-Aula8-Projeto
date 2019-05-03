@@ -1,13 +1,3 @@
-
-// ON CLICK NA IMAGEM
-
-
-function changeimage() 
-{
-document.getElementById("image").src= "./imgs/mamilos-logo-2.png";
-}
-// Menu Responsivo
-
 (function(){
 
     var menuResponsivo = document.getElementById("menuResponsivo");
@@ -28,11 +18,35 @@ document.getElementById("image").src= "./imgs/mamilos-logo-2.png";
 window.addEventListener("scroll", function(){
    
     if(pageYOffset >= 250) {
-       document.querySelector('.navegacao').style.backgroundColor = '#BF7311';
-       document.querySelector('.navegacao__itens').style.backgroundColor = '#BF7311';
+       document.querySelector('.navegacao').style.backgroundColor = '#674582';
+       document.querySelector('.navegacao__itens').style.backgroundColor = '#674582';
     } else {
        document.querySelector('.navegacao').style.backgroundColor = 'transparent';
        document.querySelector('.navegacao__itens').style.backgroundColor = 'transparent';
     }
 
 })
+
+
+
+try {
+    const buttonAutora = document.querySelector('.arrow')
+    buttonAutora.addEventListener('click', function(e){
+        e.preventDefault()
+        buttonAutora.classList.toggle('arrow-close')
+        const autoraInfos = document.querySelector('.secao-autora__about')
+        autoraInfos.classList.toggle('opened');
+    })
+} catch {
+    if(!buttonAutora) {
+        console.log('estamos na pagina home')
+    } 
+}
+
+minha-diva__foto-perfil.addEventListener("mouseover", function(){ 
+    myFunction(p1, p2); 
+
+});
+
+
+
