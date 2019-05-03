@@ -10,6 +10,8 @@ max-width: % ou px
 
 * {
     box-sizing: border-box;
+    /* margin */
+    margin: 0 auto;
 }
 
 html {
@@ -38,6 +40,9 @@ li {
 .img-responsive {
     width: 100%;
 }
+
+
+
 
 /* define o tamanho da caixa */
 .container {
@@ -154,7 +159,7 @@ li {
 
 
 /* --- HEADER --- */
-.header {
+/* .header {
     min-height: 70vh;
     height: 480px;
     background: 
@@ -171,7 +176,7 @@ li {
     text-align: center;
     padding: 11rem 2rem 5rem 2rem;
     color: white;
-}
+} */
 
 .principal__titulo {
     text-transform: uppercase;
@@ -298,12 +303,12 @@ li {
 
 /** ---- PERSONALIDADE ---- **/
 /* --- HEADER --- */
-.header-personalidade {
+ .header-personalidade {
     background-image:
       linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
       rgba(196, 61, 223, 0.418) 50%,
       #69156975 100%),
-      url(../perfil-mulheres/stephanie-shirley/imgs/banner.jpg);
+      url(../perfil-mulheres/stephanie-shriley/imgs/banner.jpg);
     background-position: center;
     display: flex;
     background-size: cover;
@@ -315,7 +320,8 @@ li {
     height: 500px;
 }
 
-
+/** ---- PERSONALIDADE ---- **/
+/* --- HEADER --- */
 .header-personalidade {
     background-image:
       linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
@@ -605,7 +611,6 @@ li {
     }
 }
 
-/* TABLET - DESKTOP */
 @media (min-width: 1024px) {
     .principal {
         max-width: 650px;
