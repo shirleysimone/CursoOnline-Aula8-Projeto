@@ -1,0 +1,149 @@
+@import url("../../css/style.css");
+
+
+.header-personalidade {
+    background-image:
+      linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
+      rgba(196, 61, 223, 0.418) 50%,
+      #69156975 100%),
+      url(./imgs/banner.jpg);
+   }
+
+.secao-diva {
+    align-items: baseline;
+}
+
+/* Celular */
+@media (max-width: 414px) {
+    .header-personalidade {
+        background-position-x: right;
+    }
+
+    .divModal iframe {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    
+    .modal {
+        margin-top: 10vh;
+    }
+
+}
+
+/* Meu código */
+p{
+    text-align: justify
+}
+.p_destaque,.destaque{
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.infografico{
+    display: flex;
+    margin-bottom: 4rem;
+  
+
+}
+.ano{
+    font-weight: bold;
+    font-stretch: ultra-expanded;
+    font-size: 3rem;
+        }
+
+.acontecimento{
+margin-left: 2rem;
+}
+
+.p__infografico{
+margin-top: 0;
+}
+
+
+.modalButton{
+    font-weight: bold;
+    background-color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Modal CSS */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -2rem;
+  margin-right: -2rem;
+  vertical-align: top;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.divModal{
+    align-items: center;
+    text-align: center;
+}
+.citacao{
+    border-style: solid;
+    width: 70%;
+    text-align: justify;
+    margin:0 auto;
+    padding: 1rem;
+}
+
+.divModal iframe {
+    width: 40%;
+    height: 400px;
+}
+.secao-diva__citacao p{
+    font-size: 1.7rem !important;
+    text-align: justify !important;
+}
+
+.secao-diva__citacao #watson{
+    font-size: 2.2rem !important;
+    margin-bottom: 3rem;
+}
+
+.referencias{
+    margin-top: 12rem;
+}
+.referenciasTitulo{
+font-weight: bold;
+margin: 0;
+
+}
+.refLink{
+    margin:0;
+}
