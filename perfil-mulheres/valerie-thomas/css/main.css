@@ -1,0 +1,150 @@
+body {
+  background: url(../img/background.jpg);
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.p--default{
+  font-size: 20px;
+  color: white;
+}
+
+.biography, .about{
+  background-color: black;
+  padding: 100px 0 10px;
+  position: relative;
+}
+
+.biography__photo{
+    width: 55%;
+}
+
+
+.biography__text-typed{
+  text-align: right;
+  color: #909090;
+  font-size: 20px;
+}
+
+.biography__author{
+  text-align: right;
+  margin: 30px;
+  color: #674582;
+  font-size: 55px;
+}
+
+.achievements{
+  padding: 100px 0;
+}
+
+.achievements__card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card{
+  position: relative;
+  height: 300px;
+  margin: 15px;
+  width: 300px;
+}
+
+.card__back{
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  background-color: purple;
+  text-align: left;
+  padding: 30px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.card__back:hover{
+   opacity: 1;
+}
+
+.card__front{
+  position: relative;
+  text-align: center;
+  background-color: rgba(192, 121, 221, 0.84);
+  height: 100%;
+  width: 100%;
+  height: 300px;
+  width: 300px;
+}
+
+.graduation{
+  width: 160px;
+  margin-top: 20px;
+}
+
+.satellite{
+  width: 275px;
+  margin-top: 20px;
+}
+
+.illusion{
+  width: 238px;
+  margin-top: 30px;
+}
+
+.tridimensional{
+  width: 280px;
+  margin-top: 30px;
+}
+
+.about{
+  text-align: center;
+  padding: 100px 0;
+}
+
+.about__title, .about__link{
+  color: #674582;
+}
+
+.about__box{
+  display: none;
+}
+
+.about__image{
+  background-color: cornsilk;
+  border: 3px dotted purple;
+  margin: 30px;
+  border-radius: 100%;
+  height: 157px;
+  object-fit: cover;
+  width: 157px;
+}
+
+.about__plus{
+  width: 30px;
+}
+
+@media(min-width: 1025px){
+  .biography__image{
+    position: absolute;
+    bottom: -3px;
+  }
+  .biography__text{
+    width: 50%;
+    margin-left: 50%;
+  }
+}
+
+@media(max-width: 1024px){
+  .biography__image{
+    text-align: center;
+  }
+  .biography__author{
+    text-align: center;
+  }
+  .biography__text-typed{
+    margin: 30px;
+    text-align: left;
+  }
+}
