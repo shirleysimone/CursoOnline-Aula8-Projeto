@@ -1,3 +1,16 @@
+//Nome
+var i = 0;
+var txt = 'Margaret Heafield Hamilton';
+var speed = 150;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("autora-js").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
 (function(){
 
     var menuResponsivo = document.getElementById("menuResponsivo");
@@ -15,20 +28,24 @@
 
 })();
 
-window.addEventListener("scroll", function(){
-   
-    if(pageYOffset >= 250) {
-       document.querySelector('.navegacao').style.backgroundColor = '#674582';
-       document.querySelector('.navegacao__itens').style.backgroundColor = '#674582';
-    } else {
-       document.querySelector('.navegacao').style.backgroundColor = 'transparent';
-       document.querySelector('.navegacao__itens').style.backgroundColor = 'transparent';
-    }
+// //Slideshow
+var myIndex = 0;
+carousel();
 
-})
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); 
+}
 
 
-
+//Seta
 try {
     const buttonAutora = document.querySelector('.arrow')
     buttonAutora.addEventListener('click', function(e){

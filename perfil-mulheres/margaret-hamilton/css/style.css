@@ -19,6 +19,7 @@ html {
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     margin: 0;
+    background: url(../imgs/astronomy-3147409_1920.jpg);
 }
 
 a {
@@ -40,7 +41,11 @@ p{
 
 /* define que as imagens tem que ter o tamanho máximo da div mãe */
 .img-responsive {
-    width: 100%;
+    width: 320px;
+}
+
+.img-responsive-text{
+    width: 500px;
 }
 
 /* define o tamanho da caixa */
@@ -230,6 +235,15 @@ p{
     box-shadow: 0 3px 10px rgba(0,0,0,.2);
 }
 
+.mySlides {
+    display:none;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding: 24px;
+}    
+
+
 /* --- FOOTER --- */
 .rodape {
     background-color: #323534;
@@ -293,21 +307,35 @@ p{
 }
 
 .rodape__cc {
+    text-align: center;
     width: 100%;
     background-color: #292A2A;
     font-size: 1rem;
     opacity: 0.5;
-    text-align: center justify;
 }
+
+.referencias-bibliograficas{
+    text-align: center;
+    font-size: 1.5rem;
+    color:white;
+    background-color: #e3d1f16b;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.referencias-bibliograficas a:hover{
+    color: rgb(94, 14, 141);
+}
+
 
 /** ---- PERSONALIDADE ---- **/
 /* --- HEADER --- */
  .header-personalidade {
     background-image:
-      linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
-      rgba(196, 61, 223, 0.418) 50%,
-      #69156975 100%),
-      url(../imgs/katebourmanhds.jpg);
+      linear-gradient(to top, rgba(82, 40, 40, 0.781) 0,
+      rgba(96, 187, 240, 0.418) 50%,
+      #5a3e2575 100%),
+      url(../imgs/margaret-nave.jpg);
     background-position: center;
     display: flex;
     background-size: cover;
@@ -326,6 +354,11 @@ p{
 }
 
 /* --- PEFIL DIVA--- */
+p{
+    color:white;
+    text-align: justify;
+}
+
 .secao-diva {
     display: flex;
     flex-direction: column;
@@ -338,8 +371,8 @@ p{
 .secao-diva__titulo {
     text-align: center;
     font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    color: #674582;
+    font-size: 3rem;
+    color: white;
 }
 
 .secao-diva__titulo_esq {
@@ -347,9 +380,10 @@ p{
 }
 
 .secao-diva p {
-    color: #63458a;
+    color: white;
     font-size: 1.6rem;
     line-height: 1.5;
+    text-align: justify;
 }
 
 .secao-diva__introducao {
@@ -364,9 +398,10 @@ p{
 }
 
 .secao-diva__citacao p {
+    color:white;
     transition: all .5s;
     font-weight: bold;
-    border: 1px solid #63458a;
+    border: 1px solid white;
     text-align: center;
     padding: 1rem;
     font-size: 1.7rem;
@@ -382,6 +417,7 @@ p{
     align-items: center;
     padding: 5rem 0;
 }
+
 
 /* --- AUTORA --- */
 .secao-autora {
@@ -423,7 +459,6 @@ p{
     margin-bottom: 25px;
 }
 
-
 .secao-autora__foto a:hover {
     opacity: 0.8;
 }
@@ -447,7 +482,7 @@ p{
     text-decoration: underline;
 }
 .secao-autora__about {
-    background-color: rgb(248, 205, 248);
+    background-color: rgb(154, 174, 185);
     border-radius: 5px;
     display:flex;
     flex-direction: row;
@@ -490,6 +525,9 @@ p{
 .secao-cta__btn:hover{
     opacity: 0.8;
 }
+
+
+
 /*** MEDIA QUERIES ***/
 /* TABLET */
 @media (min-width: 768px) {
