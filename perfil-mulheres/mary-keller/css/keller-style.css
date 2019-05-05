@@ -1,0 +1,212 @@
+/* HEADER */
+.header-keller {
+    min-height: 70vh;
+    height: 480px;
+    background: 
+        linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
+        rgba(196, 61, 223, 0.418) 50%,
+        black 100%),
+        url(../img/keller-banner.jpg);
+    background-size: cover;
+    filter: contrast(100%);
+    background-position-y:  25%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding: 11rem 2rem 5rem 2rem;
+    color: white;
+}
+
+.header_titulo {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 900;
+    text-shadow: 0px 5px 15px black;
+}
+
+.header_subtitulo {
+    font-weight: 300;
+    font-size: 2rem;
+    text-shadow: 0px 0px 15px black;
+}
+
+/* INTRODUÇÃO */
+.keller{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
+    margin: 0 auto;
+}
+
+.text{
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    color: #691569;
+    text-transform: uppercase;
+    text-align: end;
+    padding: 5rem 0rem 8rem 0rem;
+}
+
+.dud{
+  color: #c0bfc1;
+}
+
+.keller_introducao{
+    display: flex;
+    align-items: center;
+}
+
+.keller_retrato{
+    width: 60rem;
+    padding: 0rem 5rem 0rem 0rem;
+}
+
+.keller p {
+    color: #63458a;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* HISTÓRIA */
+.keller-subtitulo{
+    text-align: center;
+    color: #63458a;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    font-weight: 800;
+    padding: 5rem 0rem 2rem 0rem;
+}
+
+.keller_foto-grande{
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0rem 5rem 0rem;
+}
+
+/* CITAÇÃO */
+.wrap {
+    padding: 5% 22%;
+}
+
+.underlined {
+    color: black;
+    flex: 1;
+    font-size: 3rem;
+    line-height: 1.2;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #882688b3 0, #882688b3 100%);
+    background-position: 0 1.2em;
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: background .5s;
+}
+
+.underlined:hover {
+    background-size: 100% 100%;
+}
+
+.underlined--offset {
+    background-position: 0 0.2em;
+    box-shadow: inset 0 -.5em 0 0 white;
+}
+
+.line{
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #ececec;
+    width: 44%;
+    padding: 3rem;
+}
+
+/* REFERÊNCIAS */
+.referencias{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem;
+    margin: 0 auto;
+}
+
+.keller-referenciais{
+    color: #63458a;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    font-weight: 800;
+}
+
+.referencias > p{
+    color: #63458a;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.link-ref{
+    color: #63458a;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.link-ref :hover{
+    color: white;
+    background-color: #63458a;
+}
+
+/* AUTORA */
+.keller-autora{
+    justify-content: space-around;
+    display: flex;
+}
+.keller-autora_container{
+    display: flex;
+    justify-content: center;    
+    border: solid gainsboro 2px;
+    border-radius: 10px;
+    width: 96%;
+}
+
+.keller-autora_dados {
+    color: #63458a;
+    padding: 3rem 3rem;
+}
+
+.keller-autora_foto{
+    padding: 3rem 3rem;
+}
+
+.autora_foto{
+    width: 15rem;
+}
+
+.keller-autora_titulo{
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    margin: 0px;
+    font-size: 2.7rem;
+    color: #674582;
+}
+
+.keller-autora_descricao{
+    color: #63458a;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/* VER MAIS */
+.keller-index{
+    text-align:right;
+    padding: 10rem 21.5rem; 
+}
+
+.keller-index_btn{
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: #674582;
+    color: white;
+    font-size: 20px;
+}
