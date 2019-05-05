@@ -1,0 +1,643 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px; /* definir uma font-size padrão */
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* define que as imagens tem que ter o tamanho máximo da div mãe */
+.img-responsive {
+    width: 100%;
+    
+}
+
+/* define o tamanho da caixa */
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+}
+body {
+  background-image: url(../imgs/blackhole.jpg);
+  background-repeat: no-repeat;
+  background-position: left right;
+  background-attachment: fixed;
+}
+
+/* --- NAV --- */
+.navegacao {
+    background-color:#c04141;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+    padding: 1.5rem;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    transition: all 1s;
+}
+
+.navegacao__logo {
+    max-width: 200px;
+}
+
+.navegacao__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navegacao__itens {
+    transition: all 1s;
+    position: absolute;
+    right: -700px;
+    top: 85px;
+    width: 52%;
+    text-align: right;
+    padding: 3rem 0;
+   
+}
+
+.navegacao__itens.ativo {
+    display: block;
+    right: 0;
+    top: 85px;
+    width: 100%;
+    text-align: right;
+    padding: 3rem 0;
+    transition: right .5s;
+}
+
+.navegacao__itens li > a {
+    transition: all .5s;
+}
+
+.navegacao__itens li > a:hover {
+    color: #c04141;
+}
+
+.navegacao__menu-hamburguer {
+    text-align: right;
+}
+
+.navegacao__menu-hamburguer img {
+    border-radius: 5px;
+    width: 10%;
+
+}
+
+.navegacao__nav {
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+}
+
+.navegacao__nav li {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.navegacao__redes-sociais {
+    box-sizing: border-box;
+}
+
+.navegacao__redes-sociais a {
+    margin: 0 1rem;
+}
+
+.navegacao__redes-sociais img {
+    width: 14%;
+}
+
+/* --- HEADER --- */
+ .header {
+    background: 
+        linear-gradient(to top, rgba(44, 22, 22, 0.781) 0,
+        #7706066b 60%,
+        #c04141 100%),
+    url(../../katie-bouman/imgs/Foto\ da\ Katie\ Bouman1.jpg);
+    background-color: #c04141;
+    background-position: center;
+    display: flex;
+    background-size: cover;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 2rem;
+    color: white;
+    min-height: 80vh;
+    height: 400px;
+}
+
+.header-personalidade__titulo {
+    text-align: center;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+}
+/* --- FOOTER --- */
+.rodape {
+    background-color: #323534;
+    color: white;
+    font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: .8rem;
+}
+
+.rodape__principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.rodape__principal > * {
+    margin: 1rem 0;
+}
+
+.rodape__navegacao > li {
+    font-size: 1.1rem;
+    margin: 1rem;
+}
+
+.rodape__navegacao a {
+    transition: all .5s;
+}
+
+.rodape__navegacao a:hover {
+    color: #c04141;
+}
+
+.rodape__logo {
+    max-width: 200px;
+}
+
+.rodape__redes-sociais a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.rodape__redes-sociais a:hover {
+    color: #c04141;
+}
+
+.rodape__redes-sociais img {
+    max-width: 10px;
+    margin-right: .5rem;
+}
+
+.rodape__redes-sociais span {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.rodape__cc {
+    width: 100%;
+    background-color: #292A2A;
+    font-size: 1rem;
+    opacity: 0.5;
+    text-align: center;
+}
+/* --- PEFIL DIVA--- */
+.secao-diva {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 5rem 2rem;
+    margin: 0 auto;
+}
+.foto_perfil{
+    height: 30%;
+}
+.secao-diva__titulo {
+    text-align: left;
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: #c04141;
+    padding: 2rem 0;
+}
+
+.secao-diva p {
+    color: #c04141;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    padding: 1rem 0;
+}
+.secao-diva__foto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem 2rem 2rem;
+    background-color: #c04141;
+}
+.secao-diva__video {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 0;
+}
+.embed{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+.embed iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* --- AUTORA --- */
+.secao-autora {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.secao-autora__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.arrow {
+    cursor: pointer;
+    width: 0; 
+    height: 0; 
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #c04141;
+    transition: all .5s;
+}
+
+.arrow-close {
+    cursor: pointer;
+    transition: all .5s;
+    width: 0; 
+    height: 0; 
+    border-bottom: 10px solid #c04141;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    margin-bottom: 25px;
+}
+
+.secao-autora__foto a:hover {
+    opacity: 0.8;
+}
+
+.secao-autora__dados {
+    color: none;
+}
+
+.secao-autora__dados p {
+    margin: 15px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.secao-autora__dados span {
+    font-size: 28px;
+}
+
+.secao-autora a {
+    text-decoration: none;
+}
+.secao-autora__about {
+    background-color: none;
+    border-radius: 5px;
+    display:flex;
+    flex-direction: row;
+}
+.secao-autora__about img{
+    border-radius: 8px;
+    width: 75px;
+    height: 110px;
+    margin: 10px;
+}
+
+.secao-autora__about p {
+    line-height: 23px;
+    font-size:15px;
+    margin-right: 10px;
+    background-color: none;
+}
+
+.closed{
+    display: none;
+    transition: all 1s;
+}
+.opened{
+    display: flex;
+    transition: all 1s;
+}
+
+.secao-cta {
+    text-align:right;
+    padding: 4rem 4rem;
+}
+
+.secao-cta__btn {
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: #c04141;
+    color: white;
+    font-size: 20px;
+}
+
+.secao-cta__btn:hover{
+    opacity: 0.8;
+}
+
+/*** MEDIA QUERIES ***/
+/* CELULAR */
+@media (min-width: 320px) and (max-width: 746px){
+
+    /* --- NAV --- */
+    .navegacao__itens {
+        position: static;
+        display: flex;
+        padding: 0;
+        width: auto;
+    }
+    .foto_perfil{
+        max-width: 30%;
+    }
+    .secao-diva__foto{
+        display: flex;
+        flex-direction: row;
+    }
+    .navegacao__nav {
+        margin-bottom: 0;
+    }
+    
+    .navegacao__itens ul {
+        display: none;
+    }
+    
+    .navegacao__itens li {
+        display: none;
+    }
+    
+    .navegacao__menu-hamburguer {
+        text-align: right;
+    }
+    
+    /* --- HEADER --- */
+    .header {
+        min-height: 75vh;
+        text-align: left;
+        padding: 5rem 10rem;
+    }
+
+    .principal__titulo {
+        font-size: 2.9rem;
+    }
+    
+    .principal__sub {
+        font-size: 1.8rem;
+    }
+
+    .principal__btn {
+        margin: 0;
+    }
+    .secao-autora__btn {
+        font-size:12px;
+    }
+    
+    .secao-cta__btn button {
+        font-size: 12px;
+        float: right;
+    }
+    .secao-video_titulo {
+        text-align: center;
+    }
+    /* --- FOOTER --- */
+    .rodape {
+        padding-top: 0;
+    }
+
+    .rodape__principal {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .rodape__logo img {
+        max-width: 250px;
+    }
+
+    .rodape__navegacao > li {
+        font-size: 1.5rem;;
+    }
+   
+    /** PERSONALIDADE **/
+    /* --- OUTRA HEADER --- */
+    .header-personalidade {
+        padding: 0 20rem;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .header-personalidade__titulo {
+        font-size: 3.5rem;
+        text-align: left;
+    }
+    .embed{
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%;
+    }
+    .embed iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    }
+}
+/* TABLET */
+@media (min-width: 768px) {
+    /* --- NAV --- */
+    .navegacao__itens {
+        position: static;
+        display: flex;
+        padding: 0;
+        width: auto;
+    }
+
+    .navegacao__nav {
+        margin-bottom: 0;
+    }
+    
+    .navegacao__itens ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .navegacao__itens li {
+        font-size: 1.2rem;
+        margin: 0 .6rem;
+    }
+    .secao-diva__foto{
+        display: flex;
+        flex-direction: row;
+    }
+    .navegacao__menu-hamburguer {
+        display: none;
+    }
+
+    /* --- HEADER --- */
+    .header {
+        min-height: 75vh;
+        text-align: left;
+        padding: 5rem 10rem;
+    }
+
+    .principal__titulo {
+        font-size: 2.9rem;
+    }
+    
+    .principal__sub {
+        font-size: 1.8rem;
+    }
+
+    .principal__btn {
+        margin: 0;
+    }
+
+    /* --- FOOTER --- */
+    .rodape {
+        padding-top: 0;
+    }
+
+    .rodape__principal {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .rodape__logo img {
+        max-width: 250px;
+    }
+
+    .rodape__navegacao > li {
+        font-size: 1.5rem;;
+    }
+   
+    /** PERSONALIDADE **/
+    /* --- OUTRA HEADER --- */
+    .header-personalidade {
+        padding: 0 20rem;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .header-personalidade__titulo {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .embed{
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%;
+    }
+    .embed iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    }
+}
+@media (min-width: 1024px) {
+    .principal {
+        max-width: 650px;
+    }
+    .secao-diva__introducao {
+        flex-direction: row;
+        margin: 3rem 0;
+    }
+    .secao-diva__foto-perfil {
+        max-width: 100%;
+        margin: 0 4rem;
+    }
+    .secao-diva p {
+        font-size: 1.7rem;
+    }
+    .secao-diva__citacao p {
+        font-size: 2.5rem;
+        padding: 4rem;
+    }
+    .secao-autora__about {
+        width: 400px;
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .secao-autora__dados {
+        margin: 0 3rem;
+    }
+
+    .embed{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    }
+    .embed iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    }
+}
+/* DESKTOP */
+@media (min-width: 1440px) {
+    .navegacao__box {
+        max-width: 80%;
+    }
+    .header {
+        min-height: 90vh;
+    }
+    .navegacao__itens li {
+        font-size: 1.5rem;
+        margin: 0 1rem;
+    }
+    .principal {
+        max-width: 650px;
+    }
+}
