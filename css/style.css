@@ -212,6 +212,7 @@ li {
     background-color: #63458a;
     border-radius: 10px;
     min-height:125px;
+    object-fit: cover;
 }
 
 
