@@ -1,0 +1,316 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+/* --- HEADER --- */
+.header__jonna {
+    min-height: 70vh;
+    width:100%;
+    height: 100%;
+    background: url(../assets/05.jpg);
+    background-size: cover;
+    filter: contrast(100%);
+    background-position-y:  50%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding: 11rem 2rem 5rem 2rem;
+    color: white;
+}
+
+.principal__btnJonna {
+    margin: 0;
+}
+
+.jonna__titulo {
+    font-size:50px;
+    font-weight:lighter;
+}
+
+.imgFonte {
+    text-align:left;
+}
+
+.area {
+    height:50px;
+    display:block;
+}
+
+/*--- BTN MARROM ---*/
+.btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    font-size: 1.8rem;
+}
+
+.btn_marrom {
+    color: white;
+    background-color: #422905;
+    display: block;
+    max-width: 100px;
+    text-align: center;
+    transition: all .5s;
+}
+
+.btn_marrom:hover,
+.btn_marrom:focus {
+    transform: translateY(-1rem);
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+    background-color:#a5650a;
+}
+
+.btn_marrom:active {
+    transform: translateY(-3rem);
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+}
+
+.btn_center {
+    margin: 0 auto;
+}
+
+/*-- NAV JONNA --*/
+
+.navegacaoJonna ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 50px 20px 0 0;
+  }
+  
+.navegacaoJonna li {
+    display: inline;
+    font-size:20px;
+    margin: 50px 100px 0 0;
+    color:#949494;
+  }
+
+.navegacaoJonna li:hover {
+    color:#343434;
+}
+
+
+/*--- SOBRE JONNA ---*/
+
+.sobreJonna {
+    margin: 50px auto;
+}
+
+.sobreJonna__conteudo {
+    text-align:justify;
+    font-size:16px;
+    font-weight:lighter;
+    display:flex;
+}
+
+.sobreJonna p {
+    margin: 0 70px 0 0;
+    line-height:25px;
+}
+
+.sobreJonna__img img {
+    max-width:300px;
+    height:auto;
+}
+
+/*--- SEPARADORES ---*/
+
+.separadorJonna {
+    background: url(../assets/04.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height:100px;
+}
+
+.separador {
+    background-color:#000;
+    background-size: cover; 
+    height:200px;
+    width:100%;
+    display:block;
+    opacity:0;
+    margin: 100px 0 50px 0;
+}
+
+.separadorJonna2 {
+    background: url(../assets/06.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height:100px;
+}
+
+/*-- BIO JONNA --*/
+
+.bioJonna {
+    margin: 50px auto;
+}
+
+.bioJonna__conteudo {
+    text-align:justify;
+    font-size:16px;
+    font-weight:lighter;
+    display:flex;
+}
+
+.bioJonna p {
+    margin: 0 0 0 70px;
+    line-height:25px;
+}
+
+.bioJonna__img img {
+    width:300px;
+    height:auto;
+}
+
+/*-- PROJETOS --*/
+
+.projetosJonna__conteudo {
+    display:flex;
+    align-items: center;
+    margin-left:50px;
+
+}
+
+
+.projetosJonna__conteudo img {
+    max-width:100px;
+}
+
+.projetosJonna__conteudo p {
+    font-size:15px;
+    text-align:center;
+}
+
+.projetosJonna__img {    
+    text-align:center;
+    margin-right:100px;
+    display:flex;
+}
+
+.cubos {
+    display:flex;
+}
+
+.projetosJonna__img img {
+    padding-bottom:15px;
+}
+
+.projetosJonna {
+    margin-bottom:150px;
+}
+
+/*-- ALBUNS --*/
+
+.albuns img {
+    width:100px;
+}
+
+.albuns {
+    margin:10px 0 0 0;
+}
+
+.albuns h2 {
+    font-weight:lighter;
+    padding: 0 0 30px 0;
+    font-size:20px;
+}
+
+.textobounty {
+    display:none;
+}
+
+.textokin {
+    display:none;
+}
+
+.textoblue {
+    display:none;
+}
+
+.textoeatbf {
+    display:none;
+}
+
+.textortf {
+    display:none;
+}
+
+/*-- SCREENSHOTS --*/
+
+.screenshots img {
+    width:220px;
+    height:auto;
+}
+
+.screenshots {
+    max-width:100%;
+}
+
+.screenshots img {
+    transition: transform .2s;
+}
+.screenshots img:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+@media screen and (max-width: 768px){
+
+.sobreJonna__conteudo {
+    display:block;
+}
+
+.bioJonna__conteudo {
+    display:block;
+}
+
+.projetosJonna__conteudo {
+    display:block;
+}
+
+.projetosJonna__img {
+    padding-bottom:30px;
+    display:block;
+}
+
+.header__jonna {
+    width:100%;
+}
+
+.projetosJonna {
+    display:block;
+}
+
+.cubos {
+    display:block;
+}
+
+.bioJonna p {
+    margin: 0 10px 0 10px;
+    line-height:25px;
+}
+
+.sobreJonna p {
+    margin: 0 10px 0 10px;
+    line-height:25px;
+}
+
+.navegacaoJonna {
+    margin: 0 0 0 20px;
+}
+
+.jonna__titulo {
+    margin: 0 0 30px 10px;
+}
+
+.sobreJonna__img {
+    margin: 0 0 0 10px;
+}
+
+.bioJonna__img {
+    margin: 0 0 0 10px;
+}
+}

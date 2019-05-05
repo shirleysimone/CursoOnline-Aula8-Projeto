@@ -114,7 +114,7 @@ li {
 .navegacao__itens {
     transition: all 1s;
     position: absolute;
-    right: -700px;
+    right: -800px;
     top: 85px;
     width: 100%;
     text-align: center;
@@ -137,7 +137,7 @@ li {
 }
 
 .navegacao__itens li > a:hover {
-    color: #C083B9;
+    color: #C083B9;     
 }
 
 .navegacao__menu-hamburguer img {
@@ -166,7 +166,7 @@ li {
     background: 
         linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
         rgba(196, 61, 223, 0.418) 50%,
-        #69156975 100%),
+        black 100%),
         url(../img/turma6.jpeg);
     background-size: cover;
     filter: contrast(100%);
@@ -217,7 +217,10 @@ li {
 .maravilhosas__perfil img {
     background-color: #63458a;
     border-radius: 10px;
+    min-height:125px;
+    object-fit: cover;
 }
+
 
 .maravilhosas__perfil a img {
     transition: all .5s;
@@ -304,7 +307,7 @@ li {
 
 /** ---- PERSONALIDADE ---- **/
 /* --- HEADER --- */
- .header-personalidade {
+.header-personalidade {
     background-image:
       linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
       rgba(196, 61, 223, 0.418) 50%,
@@ -320,6 +323,25 @@ li {
     min-height: 80vh;
     height: 500px;
 }
+
+
+.header-personalidade {
+    background-image:
+      linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
+      rgba(196, 61, 223, 0.418) 50%,
+      #69156975 100%),
+      url(../perfil-mulheres/helena-antipoff/imgs/banner1.jpg);
+    background-position: center;
+    display: flex;
+    background-size: cover;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 2rem;
+    color: white;
+    min-height: 80vh;
+    height: 500px;
+}
+
 
 .header-personalidade__titulo {
     text-align: center;
@@ -553,6 +575,9 @@ li {
         margin: 5rem;
     }
 
+    .maravilhosas__perfil img{
+        min-height: 220px;
+    }
     .maravilhosas__perfil p {
         font-size: 1.5rem;
         margin-top: 1rem;
@@ -591,6 +616,8 @@ li {
         text-align: center;
     }
 }
+
+
 
 @media (min-width: 1024px) {
     .principal {
