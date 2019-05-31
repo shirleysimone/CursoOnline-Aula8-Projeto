@@ -311,7 +311,7 @@ li {
       linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
       rgba(196, 61, 223, 0.418) 50%,
       #69156975 100%),
-      url(file:///C:/Users/Candi/Desktop/CursoOnline-Aula8-Projeto/perfil-mulheres/rosa-parks/imgs/rosa-parks-capa.jpg);
+      url(/CursoOnline-Aula8-Projeto/perfil-mulheres/rosa-parks/imgs/rosa-parks-capa.jpg);
     background-position: center;
     display: flex;
     background-size: cover;
@@ -329,7 +329,7 @@ li {
       linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
       rgba(196, 61, 223, 0.418) 50%,
       #69156975 100%),
-      url(file:///C:/Users/Candi/Desktop/CursoOnline-Aula8-Projeto/perfil-mulheres/rosa-parks/imgs/rosa-parks-capa.jpg);
+      url(/CursoOnline-Aula8-Projeto/perfil-mulheres/rosa-parks/imgs/rosa-parks-capa.jpg);
     background-position: center;
     display: flex;
     background-size: cover;
